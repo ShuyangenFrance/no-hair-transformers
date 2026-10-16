@@ -8,7 +8,7 @@ for queries q >= 2P. Reports alpha (pooled over the four axes, bootstrap over pa
 change on WikiText continuations (overall and steps 256..1024) relative to the unmodified model.
 
   python tradeoff_real.py --model EleutherAI/pythia-160m --revision step143000 \
-      --pairs_from real/p160_step0 --out tradeoff/p160_final
+      --pairs_from real/p160_step0 --out tradeoff2/p160_final
 """
 import argparse, json, os, sys, types
 import numpy as np

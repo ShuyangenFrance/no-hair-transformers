@@ -94,6 +94,16 @@ no model loaded):
 python src/fit_gains.py real/p1b_step0_all
 ```
 
+## Step 3b — Non-degeneracy check (Assumption 1)
+
+Minimum of the centred pre-norm activations, per layer, on the prompts of Step 1:
+
+```bash
+python src/prenorm_check.py --model EleutherAI/pythia-160m --revision step143000 --pairs_from real/p160_step0
+python src/prenorm_check.py --model Qwen/Qwen2.5-0.5B --pairs_from real/qwen05_final --rms   # RMSNorm
+```
+
+
 ## Step 4 — Mechanism: direct vs relay paths, and dilution compensation
 
 ```bash

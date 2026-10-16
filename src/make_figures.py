@@ -2,7 +2,7 @@
 """
 make_figures.py — all figures of the paper from the saved results (no model is loaded).
 
-Run from the no_hair directory:   python make_figures.py
+Run from the repo root:   python src/make_figures.py
 Writes figures/fig*.pdf (and .png previews). Missing inputs are reported and their panels skipped.
 
   fig1_decay        prompt offset S(t), trained vs untrained, Pythia-160m, real-corpus pairs

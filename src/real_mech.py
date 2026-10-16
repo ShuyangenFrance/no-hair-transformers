@@ -12,9 +12,9 @@ For one checkpoint, on a subset of the pairs in <pairs_from>/pairs.json (same se
               attention to a typical prompt token stops decaying
 Continuations: WikiText-103 validation chunks. Intervals: bootstrap over prompt pairs.
 
-  python real_mech.py --model EleutherAI/pythia-160m --revision step0      --pairs_from real/p160_step0 --out mech/p160_step0
-  python real_mech.py --model EleutherAI/pythia-160m --revision step512    --pairs_from real/p160_step0 --out mech/p160_step512
-  python real_mech.py --model EleutherAI/pythia-160m --revision step143000 --pairs_from real/p160_step0 --out mech/p160_final
+  python real_mech.py --model EleutherAI/pythia-160m --revision step0      --pairs_from real/p160_step0 --out mech2/p160_step0
+  python real_mech.py --model EleutherAI/pythia-160m --revision step512    --pairs_from real/p160_step0 --out mech2/p160_step512
+  python real_mech.py --model EleutherAI/pythia-160m --revision step143000 --pairs_from real/p160_step0 --out mech2/p160_final
   python real_mech.py ... --n_pairs 4 --m 4                                                     (quick check)
 """
 import argparse, json, os, sys, types
