@@ -1,268 +1,0 @@
-===== todo_logs/attn_p160_step0.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 6413.91it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step0  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.003    0.988   0.007        2.26        4.33
-     2   0.003    0.988   0.007        2.20        4.14
-     3   0.003    0.989   0.007        2.11        4.09
-     7   0.003    0.991   0.006        1.94        3.78
-    12   0.003    0.992   0.006        1.86        3.60
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step0.json
-
-===== todo_logs/attn_p160_step1000.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7596.70it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step1000  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.002    0.976   0.011        2.73       37.43
-     2   0.001    0.782   0.101        8.96       43.49
-     3   0.001    0.616   0.229       12.55       52.18
-     7   0.003    0.868   0.064        5.83       30.82
-    12   0.001    0.567   0.277       12.85       59.88
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step1000.json
-
-===== todo_logs/attn_p160_step128.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 6518.37it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step128  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.003    0.987   0.007        2.28        5.48
-     2   0.003    0.986   0.008        2.36        5.37
-     3   0.003    0.979   0.012        2.65        9.40
-     7   0.002    0.968   0.012        2.88        9.67
-    12   0.002    0.945   0.018        3.98       10.82
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step128.json
-
-===== todo_logs/attn_p160_step143000.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7302.16it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step143000  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.000    0.604   0.200       17.03       69.06
-     2   0.001    0.575   0.234       17.85       67.76
-     3   0.001    0.458   0.372       17.48       55.88
-     7   0.089    0.407   0.431       16.63       69.08
-    12   0.014    0.020   0.947       69.08       69.08
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step143000.json
-
-===== todo_logs/attn_p160_step16000.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7364.63it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step16000  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.001    0.678   0.155       13.43       59.84
-     2   0.001    0.583   0.239       15.43       69.08
-     3   0.002    0.557   0.279       15.23       61.03
-     7   0.071    0.534   0.302       12.59       41.71
-    12   0.037    0.399   0.381       19.51       66.20
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step16000.json
-
-===== todo_logs/attn_p160_step256.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7102.48it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step256  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.003    0.986   0.008        2.33       10.67
-     2   0.002    0.970   0.013        3.30       13.84
-     3   0.001    0.847   0.071        6.64       22.27
-     7   0.002    0.921   0.042        3.95       24.82
-    12   0.001    0.679   0.201        9.00       42.71
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step256.json
-
-===== todo_logs/attn_p160_step4000.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7257.77it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step4000  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.001    0.818   0.069        8.93       54.68
-     2   0.001    0.610   0.216       14.12       69.07
-     3   0.001    0.570   0.272       14.40       59.57
-     7   0.031    0.677   0.211       10.49       39.19
-    12   0.003    0.448   0.361       18.07       67.66
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step4000.json
-
-===== todo_logs/attn_p160_step512.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 6978.80it/s]
-human continuations: 200 x 1024 tokens from WikiText-103 validation (250011 tokens)
-
-model=EleutherAI/pythia-160m@step512  prompts=400  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max
-     1   0.003    0.984   0.008        2.40       13.50
-     2   0.001    0.839   0.055        7.21       26.38
-     3   0.000    0.647   0.188       11.75       41.74
-     7   0.002    0.880   0.057        5.27       23.21
-    12   0.000    0.544   0.284       13.12       59.94
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/pythia-160m_step512.json
-
-===== todo_logs/attn_qwen05_final.txt
-device: mps
-[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:58,  4.93it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1023.83it/s]
-[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (262210 > 131072). Running this sequence through the model will result in indexing errors
-human continuations: 40 x 1024 tokens from WikiText-103 validation (262210 tokens)
-
-model=Qwen/Qwen2.5-0.5B  prompts=40  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max   mid_min
-     1   0.001    0.478   0.348       17.91       69.08     0.012
-     2   0.003    0.588   0.246       12.59       52.03     0.143
-     3   0.002    0.501   0.307       18.08       52.17     0.221
-     4   0.466    0.333   0.535       19.07       51.84     0.265
-     5   0.309    0.443   0.418       15.23       42.28     0.254
-     6   0.386    0.434   0.455       14.19       35.45     0.302
-     7   0.300    0.474   0.357       14.75       37.68     0.332
-     8   0.544    0.237   0.615       21.22       48.03     0.378
-     9   0.212    0.327   0.456       21.13       69.08     0.419
-    10   0.565    0.253   0.625       20.19       69.08     0.417
-    11   0.274    0.456   0.379       15.05       42.14     0.417
-    12   0.558    0.303   0.589       20.23       69.08     0.432
-    13   0.218    0.483   0.337       14.72       51.81     0.452
-    14   0.399    0.361   0.502       18.38       48.13     0.455
-    15   0.254    0.429   0.403       16.75       41.82     0.467
-    16   0.265    0.448   0.376       15.43       48.07     0.542
-    17   0.690    0.213   0.732       20.49       69.08     0.573
-    18   0.516    0.376   0.547       14.67       42.96     0.647
-    19   0.520    0.304   0.578       16.38       46.76     0.799
-    20   0.392    0.320   0.508       18.86       51.32     0.894
-    21   0.484    0.398   0.514       15.53       42.83     1.081
-    22   0.565    0.342   0.627       16.05       41.79     1.298
-    23   0.005    0.743   0.098       13.28       44.53     1.618
-    24   0.005    0.655   0.218       12.81       69.08     1.496
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/Qwen25-05B_final.json
-
-===== todo_logs/attn_qwen05_random.txt
-device: mps
-[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (262210 > 131072). Running this sequence through the model will result in indexing errors
-human continuations: 40 x 1024 tokens from WikiText-103 validation (262210 tokens)
-
-model=Qwen/Qwen2.5-0.5B [random init]  prompts=40  T=1024  queries from continuation step 64
- layer    sink  entropy   max_w  spread med  spread max   mid_min
-     1   0.003    0.990   0.007        2.10        3.80     0.033
-     2   0.003    0.992   0.006        1.82        3.60     0.307
-     3   0.003    0.993   0.006        1.75        3.59     0.465
-     4   0.003    0.993   0.005        1.66        3.53     0.571
-     5   0.003    0.993   0.005        1.66        3.43     0.667
-     6   0.003    0.993   0.005        1.63        3.70     0.733
-     7   0.003    0.993   0.005        1.64        3.39     0.810
-     8   0.003    0.993   0.005        1.63        3.94     0.884
-     9   0.003    0.993   0.005        1.66        3.43     0.949
-    10   0.003    0.993   0.005        1.61        3.41     1.020
-    11   0.003    0.993   0.005        1.62        3.51     1.086
-    12   0.003    0.994   0.005        1.58        3.42     1.143
-    13   0.003    0.993   0.005        1.63        3.55     1.191
-    14   0.003    0.993   0.005        1.61        3.31     1.240
-    15   0.003    0.994   0.005        1.59        3.54     1.289
-    16   0.003    0.993   0.005        1.61        3.32     1.331
-    17   0.003    0.993   0.005        1.59        3.57     1.365
-    18   0.003    0.993   0.005        1.60        3.43     1.416
-    19   0.003    0.994   0.005        1.59        3.45     1.460
-    20   0.003    0.994   0.005        1.57        3.49     1.496
-    21   0.002    0.994   0.005        1.60        3.70     1.533
-    22   0.003    0.994   0.005        1.59        3.37     1.573
-    23   0.003    0.993   0.005        1.60        3.46     1.618
-    24   0.003    0.994   0.005        1.57        3.65     1.662
-layer = block index + 1 (so 'layer 1' is the first block, as in the paper's L1 after block 0)
-saved attn_stats/Qwen25-05B_random.json
-
-===== todo_logs/init_std.txt
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   1%|          | 1/148 [00:00<00:32,  4.59it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 550.27it/s]
-
-pythia-160m: layers=12 width=768  small_init=0.02282  wang_init=0.00601
-  gpt_neox.layers.0.attention.query_key_value.weight      std=0.02283
-  gpt_neox.layers.0.attention.dense.weight                std=0.00601
-  gpt_neox.layers.0.mlp.dense_h_to_4h.weight              std=0.02280
-  gpt_neox.layers.0.mlp.dense_4h_to_h.weight              std=0.00601
-Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<01:08,  4.23it/s]Loading weights:  53%|█████▎    | 156/292 [00:00<00:00, 568.50it/s]Loading weights:  83%|████████▎ | 241/292 [00:00<00:00, 513.43it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 465.43it/s]
-
-pythia-410m: layers=24 width=1024  small_init=0.01976  wang_init=0.00260
-  gpt_neox.layers.0.attention.query_key_value.weight      std=0.01978
-  gpt_neox.layers.0.attention.dense.weight                std=0.00261
-  gpt_neox.layers.0.mlp.dense_h_to_4h.weight              std=0.01978
-  gpt_neox.layers.0.mlp.dense_4h_to_h.weight              std=0.00261
-Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]Loading weights:   1%|          | 1/196 [00:01<04:44,  1.46s/it]Loading weights:  26%|██▌       | 50/196 [00:01<00:03, 43.61it/s]Loading weights:  38%|███▊      | 75/196 [00:01<00:02, 50.74it/s]Loading weights:  47%|████▋     | 92/196 [00:02<00:01, 53.83it/s]Loading weights:  54%|█████▎    | 105/196 [00:02<00:01, 54.46it/s]Loading weights:  59%|█████▊    | 115/196 [00:02<00:01, 54.87it/s]Loading weights:  63%|██████▎   | 124/196 [00:02<00:01, 54.02it/s]Loading weights:  67%|██████▋   | 132/196 [00:02<00:01, 54.07it/s]Loading weights:  71%|███████▏  | 140/196 [00:03<00:00, 57.75it/s]Loading weights:  75%|███████▌  | 147/196 [00:03<00:00, 53.44it/s]Loading weights:  81%|████████  | 158/196 [00:03<00:00, 59.95it/s]Loading weights:  86%|████████▌ | 168/196 [00:03<00:00, 64.80it/s]Loading weights:  90%|████████▉ | 176/196 [00:03<00:00, 67.64it/s]Loading weights:  94%|█████████▍| 184/196 [00:03<00:00, 63.76it/s]Loading weights: 100%|██████████| 196/196 [00:03<00:00, 51.35it/s]
-
-pythia-1b: layers=16 width=2048  small_init=0.01398  wang_init=0.00276
-  gpt_neox.layers.0.attention.query_key_value.weight      std=0.01398
-  gpt_neox.layers.0.attention.dense.weight                std=0.00276
-  gpt_neox.layers.0.mlp.dense_h_to_4h.weight              std=0.01397
-  gpt_neox.layers.0.mlp.dense_4h_to_h.weight              std=0.00276
-
-===== todo_logs/p1b_step0_all.txt
-    L9     0.36       0.37   0.18 0.28 0.37 0.43 0.49 0.52
-   L10     0.36       0.36   0.17 0.27 0.36 0.42 0.48 0.50
-   L11     0.35       0.35   0.17 0.27 0.35 0.41 0.47 0.49
-   L12     0.34       0.34   0.16 0.26 0.34 0.41 0.46 0.49
-   L13     0.33       0.34   0.16 0.26 0.33 0.40 0.45 0.48
-   L14     0.33       0.33   0.16 0.25 0.33 0.39 0.44 0.47
-   L15     0.32       0.32   0.15 0.25 0.32 0.39 0.44 0.47
-
-local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
- layer      16-32      32-64     64-128    128-256    256-512   512-1024
-------------------------------------------------------------------------
-    L1      0.36       0.56       0.72       0.83       0.91       0.95 
-    L2      0.28       0.43       0.55       0.65       0.72       0.77 
-    L3      0.25       0.38       0.48       0.57       0.63       0.68 
-    L4      0.22       0.35       0.45       0.53       0.58       0.62 
-    L5      0.21       0.32       0.42       0.49       0.55       0.59 
-    L6      0.20       0.31       0.40       0.47       0.53       0.56 
-    L7      0.19       0.29       0.38       0.46       0.51       0.54 
-    L8      0.18       0.28       0.37       0.44       0.49       0.53 
-    L9      0.17       0.27       0.36       0.43       0.48       0.51 
-   L10      0.17       0.27       0.35       0.42       0.47       0.50 
-   L11      0.16       0.26       0.34       0.41       0.46       0.49 
-   L12      0.16       0.25       0.34       0.40       0.45       0.48 
-   L13      0.16       0.25       0.33       0.39       0.45       0.48 
-   L14      0.15       0.25       0.32       0.39       0.44       0.47 
-   L15      0.15       0.24       0.32       0.38       0.43       0.46 
-
-fits of the local exponents (P = 28, octave midpoints)
- layer  k (log power)     R2  G (Bessel)     R2
-    L1           0.23  0.799        0.01  0.711
-    L2           1.33  0.969        0.17  0.966
-    L3           2.14  0.986        0.36  0.990
-    L4           2.78  0.994        0.52  0.999
-    L5           3.23  0.995        0.65  1.000
-    L6           3.62  0.996        0.76  0.999
-    L7           3.95  0.996        0.86  0.999
-    L8           4.24  0.996        0.95  0.998
-    L9           4.48  0.996        1.02  0.997
-   L10           4.72  0.996        1.10  0.996
-   L11           4.91  0.996        1.16  0.996
-   L12           5.06  0.997        1.20  0.997
-   L13           5.21  0.997        1.25  0.997
-   L14           5.36  0.997        1.30  0.997
-   L15           5.52  0.997        1.35  0.996
-saved real/p1b_step0_all/real.npz real.json and pairs.json
-
