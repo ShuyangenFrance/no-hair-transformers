@@ -2,12 +2,6 @@
 
 This repository contains the code and paper for the work investigating how autoregressive transformers forget their prompts over long generations.
 
-## 📄 Paper
-
-- **PDF**: [`article/main.pdf`](article/main.pdf)
-- **LaTeX source**: [`article/main.tex`](article/main.tex)
-- **Figures**: [`article/figures/`](article/figures/)
-
 ## 🚀 Quick Start
 
 ### 1. Install dependencies
