@@ -1,0 +1,41 @@
+
+model=EleutherAI/pythia-160m@step143000  scenes=20  continuations per scene=16  windows=[16, 32, 64, 128, 256, 512, 1024, 1920]  (window width 16, labelled by its center)
+
+alpha / beta per layer  (95% bootstrap interval over scenes)
+  layer   alpha          95% CI    beta
+     L1    1.05    [1.04, 1.07]   -0.00
+     L2    0.92    [0.90, 0.93]   -0.01
+     L3    0.63    [0.57, 0.71]   -0.03
+     L6    0.59    [0.55, 0.62]   -0.05
+     L9    0.64    [0.62, 0.67]   -0.06
+    L11    0.66    [0.64, 0.68]   -0.05
+
+local alpha per octave (between consecutive windows), all axes pooled
+  layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-1920
+------------------------------------------------------------------------------------
+     L1      0.64       0.76       0.97       1.51       1.18       1.07       1.23 
+     L2      0.59       0.58       0.69       1.01       0.95       1.55       1.47 
+     L3      0.52       0.54       0.61       0.76       0.66       0.64       0.64 
+     L6      0.52       0.50       0.61       0.76       0.58       0.55       0.50 
+     L9      0.56       0.50       0.59       0.79       0.66       0.73       0.69 
+    L11      0.58       0.54       0.59       0.81       0.73       0.76       0.53 
+
+alpha per axis
+  layer   detail     para     lang    genre
+     L1     0.89     0.94     1.06     1.12
+     L2     0.87     0.91     0.93     0.90
+     L3     0.72     0.55     0.71     0.62
+     L6     0.65     0.53     0.65     0.57
+     L9     0.73     0.57     0.70     0.62
+    L11     0.75     0.57     0.72     0.64
+
+log-power fit of the local exponents: 1/(1-alpha_loc) = ln t / k + c
+     L1  (local exponent >= 1 somewhere)
+     L2  (local exponent >= 1 somewhere)
+     L3  k = 5.26  R2 = 0.199
+     L6  k = 64.17  R2 = 0.001
+     L9  k = 2.97  R2 = 0.306
+    L11  k = 4.29  R2 = 0.097
+
+fit alpha(l) = 0.98 -0.173 ln l   (residuals: +0.07 +0.05 -0.16 -0.09 +0.04 +0.09)
+saved scale/p160_final/scale.npz and scale.json

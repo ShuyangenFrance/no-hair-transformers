@@ -1,0 +1,11 @@
+=== qwen05_trained  Fri Oct  9 20:47:11 CEST 2026
+    done
+=== qwen05_random  Fri Oct  9 21:34:30 CEST 2026
+    done
+=== qwen05_prenorm  Fri Oct  9 22:19:14 CEST 2026
+    done
+=== tradeoff_p160  Fri Oct  9 22:19:39 CEST 2026
+    done
+=== qwen15_trained  Fri Oct  9 22:41:30 CEST 2026
+    done
+=== all finished  Sat Oct 10 01:10:26 CEST 2026

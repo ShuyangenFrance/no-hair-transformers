@@ -1,0 +1,44 @@
+device: mps
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 4869.41it/s]
+scene 0 detail done
+scene 0 para done
+scene 0 lang done
+scene 0 genre done
+scene 1 detail done
+scene 1 para done
+scene 1 lang done
+scene 1 genre done
+scene 2 detail done
+scene 2 para done
+scene 2 lang done
+scene 2 genre done
+
+model=EleutherAI/pythia-160m@step8000  continuations per pair=8  (alpha = -slope/2 of the squared offset)
+
+per block: decay exponent alpha of what the block writes, and relay share at the last window
+block    alpha_direct  alpha_relay    relay/(dir+rel) @t=512
+0                0.94         0.93                      0.06
+1                0.92         0.70                      0.62
+2                0.56         0.54                      0.30
+3                0.66         0.59                      0.73
+4                0.36         0.28                      0.45
+5                0.41         0.19                      0.49
+6                0.56         0.34                      0.62
+7                0.51         0.28                      0.64
+8                0.56         0.29                      0.47
+9                0.58         0.34                      0.54
+10               0.55         0.36                      0.57
+11               0.47         0.49                      0.69
+
+cumulative over blocks 0..l-1 (compare with alpha from alpha_beta.py at the same layer)
+layer    alpha_direct  alpha_relay  alpha_both    relay share @t=512
+3                0.71         0.62        0.72                  0.29
+6                0.50         0.36        0.61                  0.45
+9                0.51         0.33        0.66                  0.49
+11               0.53         0.35        0.65                  0.49
+12               0.55         0.40        0.65                  0.51
+
+note: cumulative sums cover attention writes only; MLPs act position-wise on what attention brought in.

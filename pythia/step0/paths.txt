@@ -1,0 +1,44 @@
+device: mps
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 5715.89it/s]
+scene 0 detail done
+scene 0 para done
+scene 0 lang done
+scene 0 genre done
+scene 1 detail done
+scene 1 para done
+scene 1 lang done
+scene 1 genre done
+scene 2 detail done
+scene 2 para done
+scene 2 lang done
+scene 2 genre done
+
+model=EleutherAI/pythia-160m@step0  continuations per pair=8  (alpha = -slope/2 of the squared offset)
+
+per block: decay exponent alpha of what the block writes, and relay share at the last window
+block    alpha_direct  alpha_relay    relay/(dir+rel) @t=512
+0                0.82         1.06                      0.00
+1                0.81         0.31                      0.77
+2                0.81         0.21                      0.90
+3                0.80         0.16                      0.94
+4                0.81         0.13                      0.95
+5                0.80         0.11                      0.96
+6                0.79         0.09                      0.96
+7                0.81         0.08                      0.97
+8                0.80         0.08                      0.97
+9                0.81         0.05                      0.98
+10               0.80         0.05                      0.98
+11               0.81         0.04                      0.98
+
+cumulative over blocks 0..l-1 (compare with alpha from alpha_beta.py at the same layer)
+layer    alpha_direct  alpha_relay  alpha_both    relay share @t=512
+3                0.81         0.24        0.54                  0.85
+6                0.81         0.15        0.44                  0.94
+9                0.80         0.11        0.39                  0.96
+11               0.80         0.09        0.37                  0.96
+12               0.80         0.08        0.36                  0.97
+
+note: cumulative sums cover attention writes only; MLPs act position-wise on what attention brought in.

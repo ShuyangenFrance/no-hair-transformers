@@ -1,0 +1,251 @@
+pythia/step0/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step0/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step0/attn.txt--------------------------------------------------------------------------------
+pythia/step0/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step0/attn.txt-0       5.30e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.91e-02   -0.84
+pythia/step0/attn.txt-1       5.31e-01   3.41e-01   1.99e-01   1.09e-01   5.72e-02   2.95e-02   -0.84
+pythia/step0/attn.txt-2       5.27e-01   3.40e-01   1.99e-01   1.08e-01   5.60e-02   2.90e-02   -0.85
+pythia/step0/attn.txt-3       5.25e-01   3.34e-01   1.96e-01   1.08e-01   5.60e-02   2.94e-02   -0.84
+pythia/step0/attn.txt-4       5.31e-01   3.38e-01   1.94e-01   1.06e-01   5.62e-02   2.94e-02   -0.84
+pythia/step0/attn.txt-5       5.27e-01   3.35e-01   2.01e-01   1.11e-01   5.75e-02   2.95e-02   -0.84
+pythia/step0/attn.txt-6       5.30e-01   3.42e-01   2.01e-01   1.11e-01   5.93e-02   3.01e-02   -0.83
+pythia/step0/attn.txt-7       5.32e-01   3.40e-01   1.99e-01   1.08e-01   5.61e-02   2.90e-02   -0.85
+pythia/step0/attn.txt-8       5.27e-01   3.38e-01   1.99e-01   1.12e-01   5.72e-02   2.97e-02   -0.84
+pythia/step0/attn.txt-9       5.25e-01   3.39e-01   1.96e-01   1.05e-01   5.64e-02   2.85e-02   -0.85
+pythia/step0/attn.txt-10      5.31e-01   3.37e-01   2.00e-01   1.08e-01   5.91e-02   2.92e-02   -0.84
+pythia/step0/attn.txt-11      5.30e-01   3.35e-01   1.93e-01   1.04e-01   5.47e-02   2.90e-02   -0.85
+pythia/step0/attn.txt-mean    5.29e-01   3.38e-01   1.98e-01   1.08e-01   5.69e-02   2.93e-02   -0.84
+--
+pythia/step1000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step1000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step1000/attn.txt--------------------------------------------------------------------------------
+pythia/step1000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step1000/attn.txt-0       5.08e-01   3.24e-01   1.91e-01   1.04e-01   5.36e-02   2.75e-02   -0.85
+pythia/step1000/attn.txt-1       3.69e-01   1.75e-01   9.20e-02   4.02e-02   1.03e-02   7.05e-03   -1.20
+pythia/step1000/attn.txt-2       3.19e-01   1.69e-01   6.83e-02   3.33e-02   6.77e-03   4.19e-03   -1.32
+pythia/step1000/attn.txt-3       1.72e-01   8.02e-02   4.33e-02   2.62e-02   7.37e-03   5.79e-03   -1.01
+pythia/step1000/attn.txt-4       4.44e-01   2.88e-01   1.71e-01   1.18e-01   4.80e-02   2.48e-02   -0.83
+pythia/step1000/attn.txt-5       4.88e-01   3.12e-01   1.89e-01   1.04e-01   3.76e-02   1.61e-02   -0.99
+pythia/step1000/attn.txt-6       4.97e-01   3.17e-01   1.87e-01   1.05e-01   4.87e-02   2.63e-02   -0.86
+pythia/step1000/attn.txt-7       5.33e-01   3.47e-01   2.12e-01   1.24e-01   5.55e-02   3.27e-02   -0.82
+pythia/step1000/attn.txt-8       5.21e-01   3.42e-01   1.97e-01   1.07e-01   4.94e-02   2.79e-02   -0.87
+pythia/step1000/attn.txt-9       5.17e-01   3.23e-01   1.87e-01   1.06e-01   5.05e-02   2.61e-02   -0.87
+pythia/step1000/attn.txt-10      4.67e-01   2.79e-01   1.67e-01   8.58e-02   3.23e-02   1.54e-02   -1.00
+pythia/step1000/attn.txt-11      2.85e-01   1.33e-01   6.49e-02   2.50e-02   6.95e-03   2.40e-03   -1.39
+pythia/step1000/attn.txt-mean    4.27e-01   2.57e-01   1.47e-01   8.16e-02   3.39e-02   1.80e-02   -0.93
+--
+pythia/step128/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step128/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step128/attn.txt--------------------------------------------------------------------------------
+pythia/step128/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step128/attn.txt-0       5.31e-01   3.41e-01   1.98e-01   1.09e-01   5.70e-02   2.93e-02   -0.84
+pythia/step128/attn.txt-1       5.31e-01   3.38e-01   2.00e-01   1.08e-01   5.53e-02   2.87e-02   -0.85
+pythia/step128/attn.txt-2       5.22e-01   3.30e-01   1.94e-01   1.01e-01   5.27e-02   2.67e-02   -0.87
+pythia/step128/attn.txt-3       5.17e-01   3.16e-01   1.83e-01   9.29e-02   4.91e-02   2.51e-02   -0.88
+pythia/step128/attn.txt-4       5.19e-01   3.09e-01   1.77e-01   9.24e-02   4.83e-02   2.35e-02   -0.89
+pythia/step128/attn.txt-5       5.18e-01   3.13e-01   1.76e-01   8.64e-02   4.70e-02   2.27e-02   -0.91
+pythia/step128/attn.txt-6       5.28e-01   3.22e-01   1.80e-01   9.12e-02   5.05e-02   2.46e-02   -0.89
+pythia/step128/attn.txt-7       5.20e-01   3.16e-01   1.82e-01   9.29e-02   5.00e-02   2.41e-02   -0.89
+pythia/step128/attn.txt-8       4.89e-01   2.85e-01   1.61e-01   7.86e-02   4.17e-02   1.94e-02   -0.93
+pythia/step128/attn.txt-9       5.15e-01   3.10e-01   1.79e-01   8.40e-02   4.69e-02   2.24e-02   -0.91
+pythia/step128/attn.txt-10      4.63e-01   2.61e-01   1.59e-01   7.13e-02   3.93e-02   1.58e-02   -0.96
+pythia/step128/attn.txt-11      4.99e-01   2.56e-01   1.77e-01   7.72e-02   4.38e-02   1.70e-02   -0.95
+pythia/step128/attn.txt-mean    5.13e-01   3.08e-01   1.81e-01   9.04e-02   4.85e-02   2.33e-02   -0.89
+--
+pythia/step143000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step143000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step143000/attn.txt--------------------------------------------------------------------------------
+pythia/step143000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step143000/attn.txt-0       2.61e-01   1.32e-01   6.07e-02   3.06e-02   6.14e-03   3.31e-03   -1.31
+pythia/step143000/attn.txt-1       3.22e-01   1.82e-01   1.15e-01   6.66e-02   2.39e-02   1.34e-02   -0.93
+pythia/step143000/attn.txt-2       2.71e-01   1.55e-01   1.02e-01   7.40e-02   4.60e-02   3.78e-02   -0.57
+pythia/step143000/attn.txt-3       1.53e-01   7.20e-02   5.07e-02   4.55e-02   3.08e-02   3.01e-02   -0.44
+pythia/step143000/attn.txt-4       1.95e-01   1.19e-01   1.03e-01   9.27e-02   8.08e-02   8.33e-02   -0.23
+pythia/step143000/attn.txt-5       2.86e-01   1.94e-01   1.54e-01   1.22e-01   9.66e-02   8.54e-02   -0.34
+pythia/step143000/attn.txt-6       2.71e-01   1.60e-01   1.17e-01   9.27e-02   6.70e-02   6.15e-02   -0.42
+pythia/step143000/attn.txt-7       2.41e-01   1.54e-01   1.20e-01   1.14e-01   9.41e-02   9.45e-02   -0.26
+pythia/step143000/attn.txt-8       2.61e-01   2.02e-01   1.89e-01   1.90e-01   1.71e-01   1.64e-01   -0.12
+pythia/step143000/attn.txt-9       2.03e-01   1.92e-01   1.96e-01   1.85e-01   1.81e-01   1.83e-01   -0.03
+pythia/step143000/attn.txt-10      1.67e-01   1.52e-01   1.64e-01   1.63e-01   1.48e-01   1.50e-01   -0.03
+pythia/step143000/attn.txt-11      1.99e-01   1.65e-01   1.59e-01   1.66e-01   1.46e-01   1.42e-01   -0.08
+pythia/step143000/attn.txt-mean    2.36e-01   1.57e-01   1.28e-01   1.12e-01   9.09e-02   8.74e-02   -0.28
+--
+pythia/step16000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step16000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step16000/attn.txt--------------------------------------------------------------------------------
+pythia/step16000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step16000/attn.txt-0       3.10e-01   1.59e-01   7.53e-02   3.60e-02   1.03e-02   4.76e-03   -1.23
+pythia/step16000/attn.txt-1       3.15e-01   1.66e-01   9.28e-02   5.04e-02   1.68e-02   1.24e-02   -0.98
+pythia/step16000/attn.txt-2       2.40e-01   1.28e-01   7.15e-02   4.46e-02   1.81e-02   1.25e-02   -0.87
+pythia/step16000/attn.txt-3       1.52e-01   6.20e-02   3.74e-02   2.66e-02   1.20e-02   1.07e-02   -0.76
+pythia/step16000/attn.txt-4       2.13e-01   1.33e-01   9.21e-02   7.82e-02   7.46e-02   6.36e-02   -0.33
+pythia/step16000/attn.txt-5       2.90e-01   1.88e-01   1.28e-01   9.21e-02   8.15e-02   5.74e-02   -0.45
+pythia/step16000/attn.txt-6       3.10e-01   1.83e-01   1.07e-01   7.49e-02   6.03e-02   4.76e-02   -0.54
+pythia/step16000/attn.txt-7       3.15e-01   1.95e-01   1.12e-01   7.64e-02   5.53e-02   4.50e-02   -0.57
+pythia/step16000/attn.txt-8       3.59e-01   2.24e-01   1.34e-01   8.77e-02   6.76e-02   4.74e-02   -0.58
+pythia/step16000/attn.txt-9       3.20e-01   1.98e-01   1.18e-01   7.57e-02   6.21e-02   4.40e-02   -0.57
+pythia/step16000/attn.txt-10      2.76e-01   1.68e-01   1.03e-01   6.51e-02   4.97e-02   3.95e-02   -0.57
+pythia/step16000/attn.txt-11      1.79e-01   9.08e-02   6.12e-02   5.33e-02   4.00e-02   3.98e-02   -0.42
+pythia/step16000/attn.txt-mean    2.73e-01   1.58e-01   9.44e-02   6.34e-02   4.57e-02   3.54e-02   -0.59
+--
+pythia/step2000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step2000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step2000/attn.txt--------------------------------------------------------------------------------
+pythia/step2000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step2000/attn.txt-0       4.80e-01   3.07e-01   1.77e-01   8.40e-02   3.83e-02   1.58e-02   -0.99
+pythia/step2000/attn.txt-1       3.24e-01   1.61e-01   8.17e-02   3.45e-02   9.28e-03   5.10e-03   -1.24
+pythia/step2000/attn.txt-2       2.53e-01   1.34e-01   7.38e-02   3.76e-02   9.78e-03   5.93e-03   -1.12
+pythia/step2000/attn.txt-3       1.57e-01   7.33e-02   4.17e-02   2.77e-02   7.72e-03   6.46e-03   -0.95
+pythia/step2000/attn.txt-4       4.00e-01   2.68e-01   1.96e-01   1.41e-01   7.68e-02   5.19e-02   -0.59
+pythia/step2000/attn.txt-5       4.68e-01   3.28e-01   2.43e-01   1.54e-01   7.22e-02   3.88e-02   -0.72
+pythia/step2000/attn.txt-6       4.89e-01   3.16e-01   2.12e-01   1.34e-01   6.71e-02   3.81e-02   -0.74
+pythia/step2000/attn.txt-7       4.96e-01   3.49e-01   2.37e-01   1.58e-01   8.23e-02   4.84e-02   -0.67
+pythia/step2000/attn.txt-8       4.99e-01   3.58e-01   2.30e-01   1.37e-01   6.29e-02   3.76e-02   -0.77
+pythia/step2000/attn.txt-9       4.64e-01   3.12e-01   2.12e-01   1.33e-01   6.79e-02   3.88e-02   -0.72
+pythia/step2000/attn.txt-10      4.19e-01   2.55e-01   1.74e-01   9.63e-02   4.06e-02   2.39e-02   -0.84
+pythia/step2000/attn.txt-11      2.24e-01   1.03e-01   5.87e-02   2.96e-02   7.05e-03   3.33e-03   -1.23
+pythia/step2000/attn.txt-mean    3.89e-01   2.47e-01   1.61e-01   9.72e-02   4.52e-02   2.62e-02   -0.79
+--
+pythia/step256/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step256/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step256/attn.txt--------------------------------------------------------------------------------
+pythia/step256/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step256/attn.txt-0       5.26e-01   3.37e-01   1.96e-01   1.08e-01   5.66e-02   2.88e-02   -0.84
+pythia/step256/attn.txt-1       5.15e-01   3.04e-01   1.80e-01   8.08e-02   4.16e-02   1.94e-02   -0.95
+pythia/step256/attn.txt-2       4.17e-01   1.96e-01   1.13e-01   3.61e-02   1.52e-02   6.63e-03   -1.22
+pythia/step256/attn.txt-3       3.40e-01   1.52e-01   9.55e-02   3.43e-02   1.59e-02   6.70e-03   -1.13
+pythia/step256/attn.txt-4       4.14e-01   2.10e-01   1.25e-01   5.29e-02   2.41e-02   1.13e-02   -1.04
+pythia/step256/attn.txt-5       5.07e-01   3.03e-01   1.82e-01   8.14e-02   4.41e-02   2.03e-02   -0.93
+pythia/step256/attn.txt-6       5.18e-01   3.00e-01   1.76e-01   8.98e-02   4.99e-02   2.43e-02   -0.88
+pythia/step256/attn.txt-7       5.16e-01   3.15e-01   1.92e-01   9.84e-02   5.21e-02   2.62e-02   -0.86
+pythia/step256/attn.txt-8       5.12e-01   3.13e-01   1.82e-01   9.44e-02   5.03e-02   2.60e-02   -0.87
+pythia/step256/attn.txt-9       5.19e-01   3.25e-01   1.83e-01   9.16e-02   5.14e-02   2.38e-02   -0.89
+pythia/step256/attn.txt-10      4.83e-01   2.81e-01   1.86e-01   8.49e-02   4.49e-02   1.95e-02   -0.92
+pythia/step256/attn.txt-11      3.79e-01   1.77e-01   1.01e-01   2.82e-02   1.41e-02   5.70e-03   -1.23
+pythia/step256/attn.txt-mean    4.71e-01   2.68e-01   1.59e-01   7.34e-02   3.83e-02   1.82e-02   -0.94
+--
+pythia/step3000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step3000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step3000/attn.txt--------------------------------------------------------------------------------
+pythia/step3000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step3000/attn.txt-0       4.41e-01   2.58e-01   1.30e-01   6.10e-02   2.48e-02   1.08e-02   -1.08
+pythia/step3000/attn.txt-1       3.34e-01   1.62e-01   8.61e-02   3.92e-02   1.00e-02   5.33e-03   -1.23
+pythia/step3000/attn.txt-2       2.51e-01   1.39e-01   6.96e-02   3.97e-02   1.05e-02   6.90e-03   -1.08
+pythia/step3000/attn.txt-3       1.64e-01   7.69e-02   4.33e-02   2.67e-02   7.99e-03   6.13e-03   -0.98
+pythia/step3000/attn.txt-4       3.97e-01   2.67e-01   1.72e-01   1.33e-01   8.08e-02   5.54e-02   -0.56
+pythia/step3000/attn.txt-5       4.70e-01   3.23e-01   2.05e-01   1.45e-01   7.81e-02   4.75e-02   -0.66
+pythia/step3000/attn.txt-6       4.87e-01   3.04e-01   1.92e-01   1.30e-01   6.34e-02   4.27e-02   -0.71
+pythia/step3000/attn.txt-7       4.60e-01   3.13e-01   1.98e-01   1.26e-01   6.31e-02   3.81e-02   -0.73
+pythia/step3000/attn.txt-8       4.97e-01   3.44e-01   2.02e-01   1.22e-01   6.06e-02   3.95e-02   -0.76
+pythia/step3000/attn.txt-9       4.59e-01   3.05e-01   2.01e-01   1.19e-01   7.24e-02   5.06e-02   -0.65
+pythia/step3000/attn.txt-10      4.33e-01   2.80e-01   1.59e-01   9.40e-02   4.09e-02   2.69e-02   -0.83
+pythia/step3000/attn.txt-11      2.20e-01   1.06e-01   5.10e-02   2.61e-02   7.12e-03   4.72e-03   -1.15
+pythia/step3000/attn.txt-mean    3.84e-01   2.40e-01   1.42e-01   8.84e-02   4.33e-02   2.79e-02   -0.77
+--
+pythia/step33000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step33000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step33000/attn.txt--------------------------------------------------------------------------------
+pythia/step33000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step33000/attn.txt-0       2.90e-01   1.53e-01   7.20e-02   3.39e-02   8.58e-03   4.07e-03   -1.27
+pythia/step33000/attn.txt-1       3.21e-01   1.82e-01   1.04e-01   6.18e-02   2.11e-02   1.32e-02   -0.95
+pythia/step33000/attn.txt-2       2.53e-01   1.56e-01   8.88e-02   5.39e-02   2.35e-02   1.61e-02   -0.82
+pythia/step33000/attn.txt-3       1.47e-01   7.41e-02   4.60e-02   3.23e-02   2.01e-02   1.94e-02   -0.59
+pythia/step33000/attn.txt-4       1.92e-01   1.25e-01   9.42e-02   8.08e-02   6.73e-02   5.73e-02   -0.33
+pythia/step33000/attn.txt-5       2.76e-01   1.92e-01   1.43e-01   9.88e-02   7.17e-02   5.59e-02   -0.47
+pythia/step33000/attn.txt-6       2.85e-01   1.81e-01   1.19e-01   8.42e-02   5.42e-02   4.92e-02   -0.53
+pythia/step33000/attn.txt-7       2.78e-01   1.72e-01   1.09e-01   7.49e-02   5.46e-02   5.27e-02   -0.50
+pythia/step33000/attn.txt-8       3.13e-01   2.17e-01   1.42e-01   8.95e-02   5.99e-02   4.45e-02   -0.58
+pythia/step33000/attn.txt-9       3.08e-01   2.13e-01   1.36e-01   9.27e-02   6.66e-02   5.21e-02   -0.53
+pythia/step33000/attn.txt-10      2.55e-01   1.69e-01   1.16e-01   7.64e-02   4.96e-02   3.97e-02   -0.55
+pythia/step33000/attn.txt-11      1.93e-01   1.02e-01   7.90e-02   6.96e-02   6.69e-02   7.17e-02   -0.26
+pythia/step33000/attn.txt-mean    2.59e-01   1.61e-01   1.04e-01   7.07e-02   4.70e-02   3.97e-02   -0.56
+--
+pythia/step4000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step4000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step4000/attn.txt--------------------------------------------------------------------------------
+pythia/step4000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step4000/attn.txt-0       3.99e-01   2.26e-01   1.18e-01   5.43e-02   2.07e-02   8.88e-03   -1.11
+pythia/step4000/attn.txt-1       3.26e-01   1.78e-01   9.17e-02   4.56e-02   1.09e-02   6.42e-03   -1.18
+pythia/step4000/attn.txt-2       2.43e-01   1.49e-01   8.02e-02   4.75e-02   1.46e-02   9.04e-03   -0.99
+pythia/step4000/attn.txt-3       1.54e-01   7.38e-02   4.24e-02   2.54e-02   7.31e-03   5.64e-03   -0.99
+pythia/step4000/attn.txt-4       3.36e-01   2.35e-01   1.58e-01   1.25e-01   8.34e-02   6.46e-02   -0.48
+pythia/step4000/attn.txt-5       3.90e-01   2.72e-01   1.95e-01   1.27e-01   6.98e-02   4.66e-02   -0.62
+pythia/step4000/attn.txt-6       4.06e-01   2.61e-01   1.73e-01   1.09e-01   5.64e-02   3.90e-02   -0.69
+pythia/step4000/attn.txt-7       3.86e-01   2.56e-01   1.67e-01   1.12e-01   6.04e-02   3.92e-02   -0.67
+pythia/step4000/attn.txt-8       4.34e-01   2.87e-01   1.86e-01   1.20e-01   6.76e-02   4.92e-02   -0.65
+pythia/step4000/attn.txt-9       3.89e-01   2.61e-01   1.68e-01   1.15e-01   7.65e-02   5.72e-02   -0.56
+pythia/step4000/attn.txt-10      3.66e-01   2.12e-01   1.37e-01   8.55e-02   4.44e-02   3.31e-02   -0.71
+pythia/step4000/attn.txt-11      1.83e-01   9.21e-02   4.94e-02   3.10e-02   1.10e-02   7.87e-03   -0.93
+pythia/step4000/attn.txt-mean    3.34e-01   2.09e-01   1.30e-01   8.30e-02   4.36e-02   3.06e-02   -0.71
+--
+pythia/step512/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step512/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step512/attn.txt--------------------------------------------------------------------------------
+pythia/step512/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step512/attn.txt-0       5.18e-01   3.37e-01   1.96e-01   1.08e-01   5.60e-02   2.85e-02   -0.84
+pythia/step512/attn.txt-1       4.44e-01   2.34e-01   1.18e-01   4.40e-02   1.25e-02   5.25e-03   -1.32
+pythia/step512/attn.txt-2       3.62e-01   1.68e-01   7.39e-02   3.24e-02   4.82e-03   2.73e-03   -1.48
+pythia/step512/attn.txt-3       2.39e-01   1.15e-01   6.25e-02   2.63e-02   6.52e-03   4.15e-03   -1.23
+pythia/step512/attn.txt-4       4.29e-01   2.16e-01   1.17e-01   5.58e-02   1.20e-02   5.33e-03   -1.29
+pythia/step512/attn.txt-5       4.78e-01   2.71e-01   1.54e-01   6.74e-02   2.92e-02   1.25e-02   -1.06
+pythia/step512/attn.txt-6       5.03e-01   2.99e-01   1.72e-01   8.35e-02   3.95e-02   1.89e-02   -0.96
+pythia/step512/attn.txt-7       4.98e-01   3.22e-01   1.86e-01   9.57e-02   4.78e-02   2.21e-02   -0.90
+pythia/step512/attn.txt-8       4.81e-01   2.86e-01   1.65e-01   7.70e-02   3.94e-02   1.83e-02   -0.95
+pythia/step512/attn.txt-9       5.17e-01   3.36e-01   1.85e-01   7.78e-02   4.13e-02   1.66e-02   -1.00
+pythia/step512/attn.txt-10      4.70e-01   2.61e-01   1.58e-01   5.76e-02   2.37e-02   8.02e-03   -1.18
+pythia/step512/attn.txt-11      3.21e-01   1.39e-01   7.54e-02   1.94e-02   5.64e-03   1.92e-03   -1.51
+pythia/step512/attn.txt-mean    4.38e-01   2.49e-01   1.39e-01   6.21e-02   2.65e-02   1.20e-02   -1.05
+--
+pythia/step6000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step6000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step6000/attn.txt--------------------------------------------------------------------------------
+pythia/step6000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step6000/attn.txt-0       3.71e-01   2.04e-01   1.04e-01   4.57e-02   1.85e-02   8.13e-03   -1.12
+pythia/step6000/attn.txt-1       3.23e-01   1.80e-01   9.23e-02   4.48e-02   1.30e-02   8.97e-03   -1.09
+pythia/step6000/attn.txt-2       2.28e-01   1.40e-01   7.67e-02   4.32e-02   1.48e-02   1.02e-02   -0.94
+pythia/step6000/attn.txt-3       1.55e-01   7.30e-02   3.94e-02   2.33e-02   7.29e-03   5.11e-03   -1.01
+pythia/step6000/attn.txt-4       2.56e-01   1.58e-01   1.11e-01   8.20e-02   6.15e-02   4.26e-02   -0.50
+pythia/step6000/attn.txt-5       3.00e-01   2.07e-01   1.32e-01   8.91e-02   6.03e-02   3.48e-02   -0.61
+pythia/step6000/attn.txt-6       3.59e-01   2.14e-01   1.33e-01   8.50e-02   4.92e-02   3.01e-02   -0.71
+pythia/step6000/attn.txt-7       3.53e-01   2.34e-01   1.43e-01   9.07e-02   4.91e-02   3.36e-02   -0.70
+pythia/step6000/attn.txt-8       3.89e-01   2.70e-01   1.67e-01   9.54e-02   5.45e-02   3.71e-02   -0.71
+pythia/step6000/attn.txt-9       3.52e-01   2.32e-01   1.41e-01   9.30e-02   5.94e-02   4.46e-02   -0.61
+pythia/step6000/attn.txt-10      3.35e-01   2.09e-01   1.27e-01   7.08e-02   4.16e-02   3.12e-02   -0.71
+pythia/step6000/attn.txt-11      2.06e-01   9.51e-02   4.52e-02   2.69e-02   1.23e-02   1.21e-02   -0.86
+pythia/step6000/attn.txt-mean    3.02e-01   1.85e-01   1.09e-01   6.58e-02   3.68e-02   2.49e-02   -0.74
+--
+pythia/step66000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step66000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step66000/attn.txt--------------------------------------------------------------------------------
+pythia/step66000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step66000/attn.txt-0       2.76e-01   1.43e-01   6.20e-02   3.11e-02   7.23e-03   3.66e-03   -1.29
+pythia/step66000/attn.txt-1       3.27e-01   1.88e-01   1.07e-01   6.54e-02   2.12e-02   1.41e-02   -0.94
+pythia/step66000/attn.txt-2       2.84e-01   1.65e-01   9.45e-02   6.80e-02   3.36e-02   2.64e-02   -0.70
+pythia/step66000/attn.txt-3       1.59e-01   7.22e-02   4.56e-02   3.96e-02   2.76e-02   2.48e-02   -0.51
+pythia/step66000/attn.txt-4       1.93e-01   1.20e-01   1.00e-01   8.64e-02   7.34e-02   7.18e-02   -0.27
+pythia/step66000/attn.txt-5       2.83e-01   1.97e-01   1.43e-01   1.08e-01   7.62e-02   6.27e-02   -0.44
+pythia/step66000/attn.txt-6       2.73e-01   1.62e-01   1.07e-01   8.16e-02   5.34e-02   4.78e-02   -0.51
+pythia/step66000/attn.txt-7       2.65e-01   1.57e-01   9.69e-02   8.12e-02   5.62e-02   5.53e-02   -0.46
+pythia/step66000/attn.txt-8       3.22e-01   2.19e-01   1.35e-01   1.02e-01   5.43e-02   4.77e-02   -0.58
+pythia/step66000/attn.txt-9       3.08e-01   2.17e-01   1.37e-01   1.09e-01   6.47e-02   6.63e-02   -0.48
+pythia/step66000/attn.txt-10      1.63e-01   1.28e-01   1.03e-01   1.03e-01   9.49e-02   1.16e-01   -0.11
+pythia/step66000/attn.txt-11      1.51e-01   1.05e-01   1.06e-01   1.09e-01   8.74e-02   1.00e-01   -0.10
+pythia/step66000/attn.txt-mean    2.50e-01   1.56e-01   1.03e-01   8.20e-02   5.42e-02   5.31e-02   -0.46
+--
+pythia/step8000/attn.txt:VALUE-WEIGHTED prompt_rest
+pythia/step8000/attn.txt-layer   t=16       t=32       t=64       t=128      t=256      t=512      slope
+pythia/step8000/attn.txt--------------------------------------------------------------------------------
+pythia/step8000/attn.txt-uniform 5.31e-01   3.40e-01   1.99e-01   1.09e-01   5.69e-02   2.92e-02   -0.84
+pythia/step8000/attn.txt-0       3.45e-01   1.83e-01   8.95e-02   4.26e-02   1.38e-02   6.30e-03   -1.18
+pythia/step8000/attn.txt-1       3.13e-01   1.67e-01   8.83e-02   4.92e-02   1.36e-02   9.31e-03   -1.06
+pythia/step8000/attn.txt-2       2.34e-01   1.40e-01   7.75e-02   4.65e-02   1.45e-02   9.73e-03   -0.96
+pythia/step8000/attn.txt-3       1.55e-01   6.92e-02   3.87e-02   2.69e-02   7.38e-03   6.25e-03   -0.95
+pythia/step8000/attn.txt-4       2.49e-01   1.50e-01   1.12e-01   9.32e-02   6.32e-02   5.87e-02   -0.41
+pythia/step8000/attn.txt-5       3.16e-01   1.98e-01   1.38e-01   1.01e-01   6.30e-02   4.97e-02   -0.54
+pythia/step8000/attn.txt-6       3.38e-01   1.96e-01   1.22e-01   9.26e-02   5.31e-02   3.91e-02   -0.62
+pythia/step8000/attn.txt-7       3.40e-01   2.10e-01   1.30e-01   8.89e-02   5.20e-02   3.94e-02   -0.63
+pythia/step8000/attn.txt-8       3.81e-01   2.44e-01   1.52e-01   9.91e-02   6.10e-02   4.14e-02   -0.65
+pythia/step8000/attn.txt-9       3.54e-01   2.26e-01   1.34e-01   9.77e-02   6.40e-02   4.42e-02   -0.60
+pythia/step8000/attn.txt-10      3.19e-01   1.86e-01   1.19e-01   7.90e-02   4.92e-02   3.28e-02   -0.65
+pythia/step8000/attn.txt-11      1.90e-01   8.91e-02   4.98e-02   4.05e-02   2.49e-02   1.65e-02   -0.67
+pythia/step8000/attn.txt-mean    2.95e-01   1.72e-01   1.04e-01   7.15e-02   4.00e-02   2.94e-02   -0.67

@@ -1,0 +1,35 @@
+{
+ "model": "EleutherAI/pythia-160m@step3000",
+ "temp": 1.0,
+ "T": 512,
+ "n": 32,
+ "win": 8,
+ "windows": [
+  16,
+  32,
+  64,
+  128,
+  256,
+  512
+ ],
+ "layers": [
+  3,
+  6,
+  9,
+  11
+ ],
+ "n_scenes": 3,
+ "axes": [
+  "detail",
+  "para",
+  "lang",
+  "genre"
+ ],
+ "scenes": "en",
+ "model_name": "EleutherAI/pythia-160m",
+ "random_init": false,
+ "revision": "step3000",
+ "seed": 0,
+ "vocab": 50304,
+ "encoder": null
+}

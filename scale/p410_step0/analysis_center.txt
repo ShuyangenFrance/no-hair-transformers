@@ -1,0 +1,41 @@
+
+model=EleutherAI/pythia-410m@step0  scenes=20  continuations per scene=16  windows=[16, 32, 64, 128, 256, 512, 1024, 1920]  (window width 16, labelled by its center)
+
+alpha / beta per layer  (95% bootstrap interval over scenes)
+  layer   alpha          95% CI    beta
+     L1    0.82    [0.81, 0.82]    0.01
+     L2    0.65    [0.65, 0.66]    0.01
+     L6    0.47    [0.47, 0.48]    0.01
+    L12    0.40    [0.39, 0.40]    0.01
+    L18    0.36    [0.36, 0.37]    0.01
+    L23    0.35    [0.34, 0.35]    0.01
+
+local alpha per octave (between consecutive windows), all axes pooled
+  layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-1920
+------------------------------------------------------------------------------------
+     L1      0.47       0.68       0.81       0.90       0.95       0.97       0.99 
+     L2      0.37       0.52       0.63       0.71       0.77       0.80       0.82 
+     L6      0.26       0.37       0.45       0.52       0.56       0.59       0.61 
+    L12      0.21       0.31       0.38       0.44       0.48       0.51       0.53 
+    L18      0.19       0.28       0.35       0.40       0.43       0.47       0.49 
+    L23      0.18       0.26       0.33       0.38       0.42       0.45       0.47 
+
+alpha per axis
+  layer   detail     para     lang    genre
+     L1     0.84     0.84     0.80     0.82
+     L2     0.67     0.67     0.64     0.65
+     L6     0.47     0.49     0.46     0.47
+    L12     0.40     0.42     0.39     0.39
+    L18     0.37     0.38     0.36     0.36
+    L23     0.35     0.36     0.34     0.34
+
+log-power fit of the local exponents: 1/(1-alpha_loc) = ln t / k + c
+     L1  k = 0.07  R2 = 0.720
+     L2  k = 1.08  R2 = 0.988
+     L6  k = 3.54  R2 = 0.996
+    L12  k = 5.26  R2 = 0.995
+    L18  k = 6.21  R2 = 0.997
+    L23  k = 6.76  R2 = 0.996
+
+fit alpha(l) = 0.78 -0.147 ln l   (residuals: +0.04 -0.02 -0.04 -0.01 +0.01 +0.03)
+saved scale/p410_step0/scale.npz and scale.json

@@ -1,0 +1,52 @@
+device: mps
+[gen] scene 0 detail done
+[gen] scene 0 para done
+[gen] scene 0 lang done
+[gen] scene 0 genre done
+[gen] scene 1 detail done
+[gen] scene 1 para done
+[gen] scene 1 lang done
+[gen] scene 1 genre done
+[gen] scene 2 detail done
+[gen] scene 2 para done
+[gen] scene 2 lang done
+[gen] scene 2 genre done
+[boost] scene 0 detail done
+[boost] scene 0 para done
+[boost] scene 0 lang done
+[boost] scene 0 genre done
+[boost] scene 1 detail done
+[boost] scene 1 para done
+[boost] scene 1 lang done
+[boost] scene 1 genre done
+[boost] scene 2 detail done
+[boost] scene 2 para done
+[boost] scene 2 lang done
+[boost] scene 2 genre done
+[calibration round 0] head slopes before update: median -0.85, 10-90% [-0.87, -0.82]
+[calibration round 1] head slopes before update: median -0.17, 10-90% [-0.17, -0.16]
+[calibration round 2] head slopes before update: median -0.08, 10-90% [-0.08, -0.08]
+[calibrated] residual head slopes: median -0.05, 10-90% [-0.05, -0.04];  mean gamma 1.09
+[boost_cal] scene 0 detail done
+[boost_cal] scene 0 para done
+[boost_cal] scene 0 lang done
+[boost_cal] scene 0 genre done
+[boost_cal] scene 1 detail done
+[boost_cal] scene 1 para done
+[boost_cal] scene 1 lang done
+[boost_cal] scene 1 genre done
+[boost_cal] scene 2 detail done
+[boost_cal] scene 2 para done
+[boost_cal] scene 2 lang done
+[boost_cal] scene 2 genre done
+
+model=EleutherAI/pythia-160m@step0   alpha (offset ~ t^-alpha) / beta (noise ~ t^-beta)
+layer                  gen             boost         boost_cal
+L3           0.56 / -0.00      0.08 / -0.01      0.05 / -0.01 
+L6           0.46 / -0.00      0.07 / -0.01      0.05 / -0.01 
+L9           0.41 / -0.00      0.06 / -0.01      0.04 / -0.01 
+L11          0.39 / -0.00      0.06 / -0.01      0.04 / -0.01 
+
+attention to the prompt (tokens 1..P-1), slope in log t:  gen: -0.84   boost: -0.09   boost_cal: -0.05   (boost should be ~0 if the compensation worked)
+boost_cal: per-head residual slopes of attention to a typical prompt token after calibration: median -0.05, 10-90% [-0.05, -0.04]
+saved pythia/step0/tfx.json

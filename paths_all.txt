@@ -1,0 +1,225 @@
+===== step0 =====
+device: mps
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 5715.89it/s]
+scene 0 detail done
+scene 0 para done
+scene 0 lang done
+scene 0 genre done
+scene 1 detail done
+scene 1 para done
+scene 1 lang done
+scene 1 genre done
+scene 2 detail done
+scene 2 para done
+scene 2 lang done
+scene 2 genre done
+
+model=EleutherAI/pythia-160m@step0  continuations per pair=8  (alpha = -slope/2 of the squared offset)
+
+per block: decay exponent alpha of what the block writes, and relay share at the last window
+block    alpha_direct  alpha_relay    relay/(dir+rel) @t=512
+0                0.82         1.06                      0.00
+1                0.81         0.31                      0.77
+2                0.81         0.21                      0.90
+3                0.80         0.16                      0.94
+4                0.81         0.13                      0.95
+5                0.80         0.11                      0.96
+6                0.79         0.09                      0.96
+7                0.81         0.08                      0.97
+8                0.80         0.08                      0.97
+9                0.81         0.05                      0.98
+10               0.80         0.05                      0.98
+11               0.81         0.04                      0.98
+
+cumulative over blocks 0..l-1 (compare with alpha from alpha_beta.py at the same layer)
+layer    alpha_direct  alpha_relay  alpha_both    relay share @t=512
+3                0.81         0.24        0.54                  0.85
+6                0.81         0.15        0.44                  0.94
+9                0.80         0.11        0.39                  0.96
+11               0.80         0.09        0.37                  0.96
+12               0.80         0.08        0.36                  0.97
+
+note: cumulative sums cover attention writes only; MLPs act position-wise on what attention brought in.
+===== step256 =====
+device: mps
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7952.31it/s]
+scene 0 detail done
+scene 0 para done
+scene 0 lang done
+scene 0 genre done
+scene 1 detail done
+scene 1 para done
+scene 1 lang done
+scene 1 genre done
+scene 2 detail done
+scene 2 para done
+scene 2 lang done
+scene 2 genre done
+
+model=EleutherAI/pythia-160m@step256  continuations per pair=8  (alpha = -slope/2 of the squared offset)
+
+per block: decay exponent alpha of what the block writes, and relay share at the last window
+block    alpha_direct  alpha_relay    relay/(dir+rel) @t=512
+0                0.82         0.68                      0.01
+1                0.92         0.36                      0.84
+2                1.15         0.46                      0.97
+3                1.07         0.50                      0.97
+4                1.03         0.40                      0.96
+5                0.86         0.27                      0.94
+6                0.82         0.26                      0.92
+7                0.81         0.21                      0.93
+8                0.81         0.23                      0.92
+9                0.83         0.22                      0.94
+10               0.86         0.28                      0.94
+11               1.12         0.45                      0.98
+
+cumulative over blocks 0..l-1 (compare with alpha from alpha_beta.py at the same layer)
+layer    alpha_direct  alpha_relay  alpha_both    relay share @t=512
+3                0.94         0.43        0.68                  0.85
+6                0.95         0.40        0.61                  0.93
+9                0.86         0.30        0.53                  0.92
+11               0.86         0.30        0.52                  0.93
+12               0.87         0.31        0.53                  0.93
+
+note: cumulative sums cover attention writes only; MLPs act position-wise on what attention brought in.
+===== step512 =====
+device: mps
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 6404.97it/s]
+scene 0 detail done
+scene 0 para done
+scene 0 lang done
+scene 0 genre done
+scene 1 detail done
+scene 1 para done
+scene 1 lang done
+scene 1 genre done
+scene 2 detail done
+scene 2 para done
+scene 2 lang done
+scene 2 genre done
+
+model=EleutherAI/pythia-160m@step512  continuations per pair=8  (alpha = -slope/2 of the squared offset)
+
+per block: decay exponent alpha of what the block writes, and relay share at the last window
+block    alpha_direct  alpha_relay    relay/(dir+rel) @t=512
+0                0.81         0.70                      0.01
+1                1.22         0.53                      0.91
+2                1.34         0.65                      0.95
+3                1.17         0.72                      0.91
+4                1.19         0.62                      0.93
+5                0.99         0.45                      0.90
+6                0.93         0.38                      0.90
+7                0.87         0.33                      0.91
+8                0.89         0.32                      0.92
+9                0.96         0.37                      0.94
+10               1.06         0.42                      0.95
+11               1.32         0.64                      0.99
+
+cumulative over blocks 0..l-1 (compare with alpha from alpha_beta.py at the same layer)
+layer    alpha_direct  alpha_relay  alpha_both    relay share @t=512
+3                1.04         0.63        0.87                  0.73
+6                1.07         0.61        0.80                  0.86
+9                0.97         0.47        0.67                  0.89
+11               0.98         0.46        0.67                  0.90
+12               0.99         0.49        0.69                  0.90
+
+note: cumulative sums cover attention writes only; MLPs act position-wise on what attention brought in.
+===== step4000 =====
+device: mps
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7464.88it/s]
+scene 0 detail done
+scene 0 para done
+scene 0 lang done
+scene 0 genre done
+scene 1 detail done
+scene 1 para done
+scene 1 lang done
+scene 1 genre done
+scene 2 detail done
+scene 2 para done
+scene 2 lang done
+scene 2 genre done
+
+model=EleutherAI/pythia-160m@step4000  continuations per pair=8  (alpha = -slope/2 of the squared offset)
+
+per block: decay exponent alpha of what the block writes, and relay share at the last window
+block    alpha_direct  alpha_relay    relay/(dir+rel) @t=512
+0                0.99         0.86                      0.07
+1                1.04         0.76                      0.74
+2                0.74         0.65                      0.46
+3                0.73         0.67                      0.74
+4                0.34         0.25                      0.45
+5                0.51         0.31                      0.47
+6                0.60         0.32                      0.61
+7                0.58         0.33                      0.66
+8                0.60         0.23                      0.57
+9                0.64         0.37                      0.58
+10               0.72         0.37                      0.71
+11               0.73         0.61                      0.86
+
+cumulative over blocks 0..l-1 (compare with alpha from alpha_beta.py at the same layer)
+layer    alpha_direct  alpha_relay  alpha_both    relay share @t=512
+3                0.88         0.71        0.83                  0.40
+6                0.56         0.42        0.63                  0.43
+9                0.59         0.40        0.69                  0.48
+11               0.63         0.41        0.69                  0.52
+12               0.64         0.45        0.69                  0.55
+
+note: cumulative sums cover attention writes only; MLPs act position-wise on what attention brought in.
+===== step143000 =====
+device: mps
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 6740.47it/s]
+scene 0 detail done
+scene 0 para done
+scene 0 lang done
+scene 0 genre done
+scene 1 detail done
+scene 1 para done
+scene 1 lang done
+scene 1 genre done
+scene 2 detail done
+scene 2 para done
+scene 2 lang done
+scene 2 genre done
+
+model=EleutherAI/pythia-160m@step143000  continuations per pair=8  (alpha = -slope/2 of the squared offset)
+
+per block: decay exponent alpha of what the block writes, and relay share at the last window
+block    alpha_direct  alpha_relay    relay/(dir+rel) @t=512
+0                1.09         1.01                      0.07
+1                0.79         0.66                      0.42
+2                0.48         0.29                      0.52
+3                0.26         0.29                      0.53
+4                0.31         0.27                      0.52
+5                0.30         0.15                      0.52
+6                0.39         0.26                      0.57
+7                0.34         0.19                      0.55
+8                0.49         0.33                      0.61
+9                0.46         0.39                      0.45
+10               0.54         0.47                      0.61
+11              -0.26        -0.22                      0.50
+
+cumulative over blocks 0..l-1 (compare with alpha from alpha_beta.py at the same layer)
+layer    alpha_direct  alpha_relay  alpha_both    relay share @t=512
+3                0.61         0.36        0.73                  0.51
+6                0.36         0.21        0.74                  0.52
+9                0.39         0.24        0.74                  0.53
+11               0.40         0.27        0.71                  0.52
+12               0.18         0.09        0.70                  0.51
+
+note: cumulative sums cover attention writes only; MLPs act position-wise on what attention brought in.

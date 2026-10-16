@@ -1,0 +1,25 @@
+=== init_std  Tue Oct 13 13:19:04 CEST 2026
+    done
+=== attn_p160_step0  Tue Oct 13 13:19:16 CEST 2026
+    FAILED (see todo_logs/attn_p160_step0.txt)
+=== attn_p160_step128  Tue Oct 13 13:19:28 CEST 2026
+    FAILED (see todo_logs/attn_p160_step128.txt)
+=== attn_p160_step256  Tue Oct 13 13:19:37 CEST 2026
+    FAILED (see todo_logs/attn_p160_step256.txt)
+=== attn_p160_step512  Tue Oct 13 13:19:46 CEST 2026
+    FAILED (see todo_logs/attn_p160_step512.txt)
+=== attn_p160_step1000  Tue Oct 13 13:19:55 CEST 2026
+    FAILED (see todo_logs/attn_p160_step1000.txt)
+=== attn_p160_step4000  Tue Oct 13 13:20:05 CEST 2026
+    FAILED (see todo_logs/attn_p160_step4000.txt)
+=== attn_p160_step16000  Tue Oct 13 13:20:15 CEST 2026
+    FAILED (see todo_logs/attn_p160_step16000.txt)
+=== attn_p160_step143000  Tue Oct 13 13:20:24 CEST 2026
+    FAILED (see todo_logs/attn_p160_step143000.txt)
+=== attn_qwen05_random  Tue Oct 13 13:20:35 CEST 2026
+    done
+=== attn_qwen05_final  Tue Oct 13 13:21:17 CEST 2026
+    done
+=== p1b_step0_all  Tue Oct 13 13:21:50 CEST 2026
+    done
+=== all finished  Tue Oct 13 14:13:26 CEST 2026

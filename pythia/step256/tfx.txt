@@ -1,0 +1,48 @@
+device: mps
+human continuations: 16 x 512 tokens from WikiText-103 validation (250011 tokens)
+[gen] scene 0 detail done
+[gen] scene 0 para done
+[gen] scene 0 lang done
+[gen] scene 0 genre done
+[gen] scene 1 detail done
+[gen] scene 1 para done
+[gen] scene 1 lang done
+[gen] scene 1 genre done
+[gen] scene 2 detail done
+[gen] scene 2 para done
+[gen] scene 2 lang done
+[gen] scene 2 genre done
+[human] scene 0 detail done
+[human] scene 0 para done
+[human] scene 0 lang done
+[human] scene 0 genre done
+[human] scene 1 detail done
+[human] scene 1 para done
+[human] scene 1 lang done
+[human] scene 1 genre done
+[human] scene 2 detail done
+[human] scene 2 para done
+[human] scene 2 lang done
+[human] scene 2 genre done
+[boost] scene 0 detail done
+[boost] scene 0 para done
+[boost] scene 0 lang done
+[boost] scene 0 genre done
+[boost] scene 1 detail done
+[boost] scene 1 para done
+[boost] scene 1 lang done
+[boost] scene 1 genre done
+[boost] scene 2 detail done
+[boost] scene 2 para done
+[boost] scene 2 lang done
+[boost] scene 2 genre done
+
+model=EleutherAI/pythia-160m@step256   alpha (offset ~ t^-alpha) / beta (noise ~ t^-beta)
+layer                  gen             human             boost
+L3           0.70 / -0.03      0.67 / 0.04       0.14 / -0.03 
+L6           0.64 / -0.04      0.62 / 0.02       0.15 / -0.04 
+L9           0.57 / -0.03      0.56 / -0.01      0.14 / -0.03 
+L11          0.58 / -0.04      0.56 / -0.01      0.15 / -0.04 
+
+attention to the prompt (tokens 1..P-1), slope in log t:  gen: -0.94   boost: -0.16   (boost should be ~0 if the compensation worked)
+saved pythia/step256/tfx.json

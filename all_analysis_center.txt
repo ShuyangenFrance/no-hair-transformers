@@ -1,0 +1,695 @@
+===== real/p160_final/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step143000  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.92 [0.87,0.97]    0.99 [0.96,1.01]    0.99 [0.97,1.01]    0.97 [0.96,0.99]  -0.02
+    L2    0.79 [0.77,0.81]    0.80 [0.79,0.81]    0.79 [0.79,0.80]    0.82 [0.81,0.82]  -0.03
+    L3    0.66 [0.65,0.68]    0.52 [0.48,0.58]    0.56 [0.54,0.57]    0.66 [0.63,0.70]  -0.04
+    L6    0.60 [0.58,0.62]    0.53 [0.49,0.56]    0.54 [0.52,0.55]    0.61 [0.58,0.63]  -0.07
+    L9    0.65 [0.64,0.67]    0.56 [0.54,0.59]    0.60 [0.59,0.61]    0.65 [0.64,0.66]  -0.08
+   L11    0.66 [0.65,0.68]    0.57 [0.55,0.60]    0.63 [0.62,0.64]    0.68 [0.67,0.69]  -0.08
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.55       0.77       0.95       1.54       0.92       1.22 
+    L2      0.53       0.59       0.71       0.98       0.89       1.34 
+    L3      0.48       0.51       0.60       0.67       0.51       0.44 
+    L6      0.48       0.48       0.58       0.64       0.51       0.46 
+    L9      0.60       0.51       0.60       0.68       0.60       0.56 
+   L11      0.60       0.54       0.61       0.73       0.62       0.57 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1   (local exponent >= 1 somewhere: not in the untrained regime)
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3         255.79  0.000       -9.53  0.002
+    L6          38.69  0.010       27.70  0.001
+    L9          33.36  0.013        6.80  0.006
+   L11          16.01  0.029        2.88  0.014
+saved real/p160_final/real.npz real.json and pairs.json
+
+===== real/p160_step0/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step0  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.75 [0.74,0.76]    0.74 [0.73,0.75]    0.69 [0.68,0.70]    0.73 [0.73,0.74]  -0.02
+    L2    0.59 [0.58,0.60]    0.58 [0.58,0.59]    0.54 [0.53,0.55]    0.57 [0.57,0.58]  -0.02
+    L3    0.52 [0.51,0.53]    0.51 [0.51,0.52]    0.47 [0.47,0.48]    0.50 [0.50,0.51]  -0.02
+    L6    0.42 [0.41,0.44]    0.42 [0.42,0.43]    0.39 [0.38,0.40]    0.41 [0.41,0.42]  -0.02
+    L9    0.39 [0.37,0.40]    0.38 [0.38,0.39]    0.35 [0.34,0.36]    0.37 [0.37,0.38]  -0.02
+   L11    0.37 [0.35,0.38]    0.37 [0.36,0.37]    0.33 [0.33,0.34]    0.35 [0.35,0.36]  -0.02
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.36       0.56       0.71       0.83       0.90       0.95 
+    L2      0.28       0.43       0.55       0.65       0.72       0.77 
+    L3      0.24       0.38       0.48       0.58       0.64       0.68 
+    L6      0.20       0.31       0.40       0.48       0.53       0.57 
+    L9      0.17       0.27       0.36       0.43       0.48       0.52 
+   L11      0.17       0.26       0.34       0.41       0.46       0.50 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1           0.24  0.797        0.01  0.706
+    L2           1.33  0.971        0.17  0.968
+    L3           2.11  0.987        0.35  0.992
+    L6           3.54  0.995        0.74  1.000
+    L9           4.38  0.997        0.99  0.999
+   L11           4.82  0.997        1.13  0.999
+saved real/p160_step0/real.npz real.json and pairs.json
+
+===== real/p160_step1000/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step1000  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.74 [0.73,0.75]    0.74 [0.73,0.75]    0.66 [0.65,0.68]    0.73 [0.73,0.74]  -0.02
+    L2    0.76 [0.75,0.77]    0.77 [0.76,0.77]    0.70 [0.70,0.72]    0.76 [0.75,0.77]  -0.02
+    L3    0.83 [0.81,0.85]    0.79 [0.76,0.80]    0.74 [0.73,0.75]    0.81 [0.80,0.82]  -0.03
+    L6    0.68 [0.66,0.70]    0.66 [0.65,0.67]    0.64 [0.64,0.65]    0.67 [0.67,0.68]  -0.06
+    L9    0.64 [0.63,0.66]    0.62 [0.61,0.63]    0.60 [0.59,0.60]    0.64 [0.64,0.65]  -0.07
+   L11    0.66 [0.65,0.68]    0.64 [0.63,0.65]    0.62 [0.61,0.62]    0.67 [0.66,0.67]  -0.07
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.31       0.51       0.67       0.81       0.90       0.95 
+    L2      0.37       0.53       0.70       0.91       0.82       1.09 
+    L3      0.40       0.54       0.66       1.05       0.80       1.27 
+    L6      0.38       0.47       0.58       0.81       0.74       1.14 
+    L9      0.38       0.47       0.56       0.72       0.70       0.95 
+   L11      0.39       0.49       0.59       0.74       0.74       0.99 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1           0.21  0.740        0.01  0.651
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3   (local exponent >= 1 somewhere: not in the untrained regime)
+    L6   (local exponent >= 1 somewhere: not in the untrained regime)
+    L9           0.32  0.506        0.01  0.507
+   L11           0.07  0.421        0.00  0.480
+saved real/p160_step1000/real.npz real.json and pairs.json
+
+===== real/p160_step128/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step128  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.75 [0.74,0.76]    0.74 [0.73,0.75]    0.68 [0.67,0.69]    0.73 [0.73,0.74]  -0.02
+    L2    0.59 [0.58,0.60]    0.59 [0.58,0.60]    0.53 [0.53,0.54]    0.58 [0.57,0.58]  -0.02
+    L3    0.52 [0.50,0.53]    0.52 [0.52,0.53]    0.47 [0.46,0.48]    0.51 [0.50,0.51]  -0.02
+    L6    0.44 [0.42,0.45]    0.45 [0.44,0.46]    0.40 [0.39,0.40]    0.44 [0.43,0.44]  -0.03
+    L9    0.41 [0.40,0.43]    0.43 [0.42,0.43]    0.38 [0.37,0.39]    0.42 [0.41,0.42]  -0.03
+   L11    0.41 [0.39,0.42]    0.43 [0.42,0.43]    0.38 [0.37,0.38]    0.41 [0.41,0.42]  -0.03
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.35       0.55       0.71       0.83       0.90       0.95 
+    L2      0.27       0.42       0.55       0.65       0.72       0.78 
+    L3      0.24       0.37       0.48       0.57       0.64       0.69 
+    L6      0.20       0.30       0.41       0.47       0.55       0.59 
+    L9      0.20       0.29       0.40       0.44       0.52       0.55 
+   L11      0.20       0.29       0.40       0.43       0.51       0.53 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1           0.25  0.801        0.01  0.714
+    L2           1.27  0.957        0.16  0.945
+    L3           2.01  0.979        0.33  0.982
+    L6           3.21  0.986        0.65  0.993
+    L9           3.81  0.985        0.81  0.989
+   L11           4.20  0.984        0.92  0.984
+saved real/p160_step128/real.npz real.json and pairs.json
+
+===== real/p160_step16000/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step16000  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.98 [0.94,1.05]    1.03 [1.00,1.06]    1.06 [1.05,1.07]    1.03 [1.02,1.05]  -0.02
+    L2    0.88 [0.86,0.90]    0.89 [0.88,0.90]    0.89 [0.88,0.90]    0.91 [0.90,0.92]  -0.03
+    L3    0.73 [0.71,0.75]    0.63 [0.60,0.67]    0.67 [0.66,0.67]    0.75 [0.73,0.76]  -0.03
+    L6    0.63 [0.62,0.65]    0.52 [0.48,0.58]    0.53 [0.51,0.54]    0.63 [0.59,0.66]  -0.05
+    L9    0.67 [0.65,0.68]    0.56 [0.53,0.61]    0.60 [0.59,0.61]    0.67 [0.65,0.69]  -0.07
+   L11    0.62 [0.60,0.65]    0.56 [0.53,0.58]    0.61 [0.60,0.61]    0.65 [0.64,0.66]  -0.09
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.51       0.75       0.97       1.47       1.15       1.81 
+    L2      0.54       0.64       0.77       1.14       0.93       1.72 
+    L3      0.51       0.57       0.65       0.81       0.62       0.89 
+    L6      0.48       0.50       0.60       0.67       0.43       0.42 
+    L9      0.53       0.54       0.57       0.73       0.57       0.63 
+   L11      0.45       0.52       0.56       0.76       0.64       0.68 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1   (local exponent >= 1 somewhere: not in the untrained regime)
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3           0.68  0.541        0.04  0.558
+    L6         -30.38  0.009       -3.57  0.016
+    L9           5.46  0.186        0.88  0.114
+   L11           2.61  0.439        0.40  0.289
+saved real/p160_step16000/real.npz real.json and pairs.json
+
+===== real/p160_step256/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step256  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.75 [0.74,0.76]    0.74 [0.73,0.75]    0.67 [0.66,0.68]    0.73 [0.73,0.74]  -0.02
+    L2    0.63 [0.62,0.64]    0.64 [0.63,0.64]    0.57 [0.56,0.58]    0.62 [0.62,0.63]  -0.02
+    L3    0.62 [0.60,0.63]    0.64 [0.63,0.65]    0.58 [0.57,0.59]    0.62 [0.62,0.63]  -0.02
+    L6    0.56 [0.54,0.57]    0.59 [0.58,0.61]    0.55 [0.55,0.56]    0.58 [0.57,0.58]  -0.03
+    L9    0.50 [0.49,0.52]    0.53 [0.52,0.55]    0.51 [0.50,0.52]    0.52 [0.52,0.53]  -0.04
+   L11    0.50 [0.49,0.51]    0.53 [0.51,0.54]    0.52 [0.51,0.52]    0.52 [0.51,0.53]  -0.04
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.34       0.53       0.69       0.82       0.90       0.94 
+    L2      0.27       0.41       0.59       0.68       0.78       0.86 
+    L3      0.28       0.39       0.61       0.70       0.80       0.87 
+    L6      0.30       0.40       0.59       0.66       0.73       0.78 
+    L9      0.33       0.42       0.55       0.55       0.65       0.63 
+   L11      0.36       0.45       0.57       0.53       0.63       0.61 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1           0.26  0.803        0.01  0.719
+    L2           0.71  0.853        0.06  0.790
+    L3           0.64  0.867        0.05  0.812
+    L6           1.24  0.965        0.16  0.964
+    L9           2.84  0.899        0.50  0.862
+   L11           3.48  0.851        0.62  0.803
+saved real/p160_step256/real.npz real.json and pairs.json
+
+===== real/p160_step4000/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step4000  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.91 [0.86,0.96]    0.98 [0.96,1.00]    0.99 [0.98,1.00]    0.97 [0.96,0.99]  -0.02
+    L2    0.91 [0.88,0.95]    0.97 [0.96,0.99]    0.94 [0.93,0.95]    0.97 [0.96,0.98]  -0.03
+    L3    0.83 [0.81,0.84]    0.80 [0.79,0.81]    0.83 [0.82,0.84]    0.84 [0.83,0.85]  -0.03
+    L6    0.60 [0.58,0.62]    0.58 [0.55,0.60]    0.58 [0.58,0.60]    0.62 [0.61,0.63]  -0.06
+    L9    0.63 [0.62,0.66]    0.57 [0.56,0.59]    0.64 [0.63,0.64]    0.64 [0.64,0.65]  -0.07
+   L11    0.61 [0.59,0.64]    0.56 [0.55,0.58]    0.62 [0.61,0.63]    0.64 [0.63,0.64]  -0.09
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.46       0.73       0.96       1.32       1.08       1.65 
+    L2      0.52       0.70       0.85       1.19       1.04       1.75 
+    L3      0.53       0.66       0.71       1.04       0.71       1.70 
+    L6      0.47       0.53       0.63       0.71       0.51       0.64 
+    L9      0.51       0.57       0.64       0.74       0.60       0.64 
+   L11      0.47       0.54       0.63       0.75       0.59       0.65 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1   (local exponent >= 1 somewhere: not in the untrained regime)
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3   (local exponent >= 1 somewhere: not in the untrained regime)
+    L6           5.06  0.233        0.88  0.156
+    L9           4.75  0.226        0.81  0.119
+   L11           3.69  0.266        0.62  0.144
+saved real/p160_step4000/real.npz real.json and pairs.json
+
+===== real/p160_step512/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step512  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.74 [0.73,0.75]    0.74 [0.73,0.75]    0.67 [0.66,0.68]    0.73 [0.72,0.74]  -0.02
+    L2    0.78 [0.76,0.79]    0.78 [0.77,0.79]    0.72 [0.71,0.73]    0.77 [0.76,0.78]  -0.02
+    L3    0.81 [0.80,0.83]    0.82 [0.81,0.83]    0.78 [0.77,0.79]    0.81 [0.81,0.82]  -0.03
+    L6    0.77 [0.75,0.78]    0.78 [0.77,0.79]    0.75 [0.75,0.76]    0.78 [0.77,0.79]  -0.05
+    L9    0.67 [0.66,0.68]    0.68 [0.67,0.68]    0.65 [0.64,0.66]    0.68 [0.67,0.68]  -0.05
+   L11    0.67 [0.66,0.68]    0.69 [0.68,0.69]    0.66 [0.65,0.67]    0.69 [0.68,0.69]  -0.06
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.33       0.53       0.69       0.81       0.90       0.95 
+    L2      0.34       0.52       0.74       0.91       0.95       1.06 
+    L3      0.35       0.54       0.73       1.09       1.01       1.12 
+    L6      0.36       0.52       0.67       1.07       1.00       1.09 
+    L9      0.38       0.50       0.62       0.80       0.87       0.84 
+   L11      0.39       0.51       0.63       0.80       0.90       0.83 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1           0.26  0.786        0.01  0.696
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3   (local exponent >= 1 somewhere: not in the untrained regime)
+    L6   (local exponent >= 1 somewhere: not in the untrained regime)
+    L9           0.64  0.800        0.06  0.697
+   L11           0.55  0.630        0.04  0.440
+saved real/p160_step512/real.npz real.json and pairs.json
+
+===== real/p1b_final/analysis_center.txt
+
+model=EleutherAI/pythia-1b@step143000  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.90 [0.87,0.93]    0.86 [0.84,0.88]    0.85 [0.83,0.87]    0.88 [0.87,0.89]  -0.02
+    L2    0.79 [0.78,0.81]    0.78 [0.77,0.79]    0.77 [0.76,0.78]    0.79 [0.78,0.80]  -0.03
+    L3    0.71 [0.69,0.73]    0.71 [0.70,0.72]    0.69 [0.68,0.70]    0.72 [0.70,0.73]  -0.04
+    L4    0.69 [0.67,0.71]    0.66 [0.65,0.67]    0.67 [0.67,0.68]    0.70 [0.69,0.71]  -0.01
+    L8    0.61 [0.58,0.65]    0.57 [0.56,0.59]    0.59 [0.58,0.59]    0.63 [0.62,0.64]  -0.05
+   L12    0.62 [0.60,0.65]    0.57 [0.55,0.58]    0.57 [0.57,0.58]    0.64 [0.63,0.65]  -0.07
+   L15    0.59 [0.57,0.61]    0.52 [0.50,0.53]    0.57 [0.56,0.57]    0.61 [0.60,0.62]  -0.09
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.47       0.63       0.90       1.08       1.22       0.79 
+    L2      0.49       0.57       0.75       0.87       1.00       1.14 
+    L3      0.53       0.57       0.63       0.71       0.85       1.05 
+    L4      0.57       0.59       0.63       0.70       0.79       0.85 
+    L8      0.50       0.55       0.58       0.58       0.67       0.67 
+   L12      0.52       0.50       0.58       0.66       0.61       0.60 
+   L15      0.49       0.46       0.53       0.64       0.63       0.60 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1   (local exponent >= 1 somewhere: not in the untrained regime)
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3   (local exponent >= 1 somewhere: not in the untrained regime)
+    L4           0.95  0.828        0.08  0.841
+    L8           3.61  0.860        0.52  0.865
+   L12           6.32  0.442        1.07  0.348
+   L15           4.54  0.650        0.76  0.604
+saved real/p1b_final/real.npz real.json and pairs.json
+
+===== real/p1b_step0/analysis_center.txt
+
+model=EleutherAI/pythia-1b@step0  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 26, para 27, lang 32, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.75 [0.74,0.76]    0.74 [0.73,0.75]    0.69 [0.68,0.70]    0.73 [0.73,0.74]  -0.02
+    L2    0.59 [0.58,0.60]    0.59 [0.58,0.59]    0.54 [0.53,0.55]    0.57 [0.57,0.58]  -0.02
+    L3    0.52 [0.50,0.53]    0.51 [0.51,0.52]    0.47 [0.46,0.48]    0.50 [0.50,0.51]  -0.02
+    L4    0.47 [0.46,0.48]    0.47 [0.47,0.48]    0.43 [0.43,0.44]    0.46 [0.46,0.47]  -0.02
+    L8    0.39 [0.38,0.40]    0.39 [0.39,0.40]    0.36 [0.35,0.37]    0.38 [0.38,0.39]  -0.02
+   L12    0.36 [0.35,0.37]    0.36 [0.35,0.36]    0.33 [0.32,0.33]    0.35 [0.34,0.35]  -0.02
+   L15    0.34 [0.33,0.35]    0.34 [0.34,0.35]    0.31 [0.31,0.32]    0.33 [0.33,0.33]  -0.03
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024
+------------------------------------------------------------------------
+    L1      0.36       0.56       0.72       0.83       0.91       0.95 
+    L2      0.28       0.43       0.55       0.65       0.72       0.77 
+    L3      0.25       0.38       0.48       0.57       0.63       0.68 
+    L4      0.22       0.35       0.45       0.53       0.58       0.62 
+    L8      0.18       0.28       0.37       0.44       0.49       0.53 
+   L12      0.16       0.25       0.34       0.40       0.45       0.48 
+   L15      0.15       0.24       0.32       0.38       0.43       0.46 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1           0.23  0.798        0.01  0.710
+    L2           1.32  0.970        0.17  0.966
+    L3           2.13  0.986        0.36  0.990
+    L4           2.77  0.994        0.52  0.999
+    L8           4.24  0.996        0.95  0.998
+   L12           5.05  0.997        1.20  0.997
+   L15           5.52  0.997        1.35  0.996
+saved real/p1b_step0/real.npz real.json and pairs.json
+
+===== real/qwen05_final/analysis_center.txt
+
+model=Qwen/Qwen2.5-0.5B  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024, 2048]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 27, para 27, lang 31, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.70 [0.67,0.75]    0.75 [0.73,0.76]    0.80 [0.79,0.81]    0.73 [0.71,0.75]  -0.02
+    L2    0.68 [0.66,0.71]    0.65 [0.62,0.68]    0.71 [0.69,0.72]    0.69 [0.68,0.70]  -0.03
+    L3    0.69 [0.66,0.71]    0.66 [0.63,0.68]    0.71 [0.70,0.72]    0.69 [0.69,0.70]  -0.03
+    L6    0.61 [0.59,0.64]    0.57 [0.56,0.58]    0.61 [0.60,0.62]    0.63 [0.62,0.63]  -0.04
+   L12    0.56 [0.53,0.59]    0.53 [0.51,0.55]    0.53 [0.52,0.53]    0.55 [0.54,0.56]  -0.05
+   L18    0.55 [0.52,0.59]    0.51 [0.49,0.52]    0.52 [0.51,0.52]    0.57 [0.56,0.58]  -0.05
+   L23    0.59 [0.56,0.61]    0.53 [0.52,0.55]    0.54 [0.54,0.55]    0.62 [0.61,0.63]  -0.07
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-2048
+-----------------------------------------------------------------------------------
+    L1      0.54       0.74       0.80       0.73       1.09       1.12       0.26 
+    L2      0.66       0.64       0.61       0.64       0.79       1.09       0.40 
+    L3      0.61       0.62       0.63       0.71       0.80       1.06       0.39 
+    L6      0.58       0.62       0.68       0.52       0.73       0.52       0.46 
+   L12      0.56       0.53       0.46       0.45       0.61       0.56       0.57 
+   L18      0.60       0.58       0.56       0.53       0.48       0.46       0.26 
+   L23      0.60       0.54       0.62       0.55       0.53       0.51       0.36 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1   (local exponent >= 1 somewhere: not in the untrained regime)
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3   (local exponent >= 1 somewhere: not in the untrained regime)
+    L6         -11.64  0.045       -1.81  0.038
+   L12          22.69  0.070        3.30  0.110
+   L18          -4.57  0.887       -0.90  0.966
+   L23          -6.14  0.601       -1.11  0.640
+saved real/qwen05_final/real.npz real.json and pairs.json
+
+===== real/qwen05_prefix/analysis_center.txt
+
+model=Qwen/Qwen2.5-0.5B  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024, 2048]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 28, para 28, lang 32, unrelated 27
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.70 [0.67,0.75]    0.75 [0.73,0.76]    0.80 [0.79,0.81]    0.73 [0.71,0.75]  -0.02
+    L2    0.68 [0.66,0.70]    0.65 [0.62,0.69]    0.71 [0.70,0.73]    0.68 [0.67,0.70]  -0.03
+    L3    0.68 [0.66,0.71]    0.67 [0.64,0.69]    0.72 [0.71,0.73]    0.69 [0.67,0.70]  -0.03
+    L6    0.65 [0.63,0.66]    0.60 [0.59,0.62]    0.55 [0.48,0.65]    0.62 [0.57,0.65]  -0.03
+   L12    0.61 [0.59,0.63]    0.56 [0.55,0.58]    0.49 [0.43,0.55]    0.55 [0.50,0.59]  -0.05
+   L18    0.62 [0.60,0.63]    0.56 [0.55,0.58]    0.54 [0.51,0.57]    0.61 [0.59,0.62]  -0.05
+   L23    0.61 [0.60,0.64]    0.56 [0.54,0.57]    0.56 [0.55,0.58]    0.64 [0.62,0.65]  -0.07
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-2048
+-----------------------------------------------------------------------------------
+    L1      0.53       0.74       0.80       0.73       1.09       1.12       0.26 
+    L2      0.66       0.64       0.61       0.63       0.83       1.11       0.38 
+    L3      0.62       0.62       0.63       0.69       0.84       1.09       0.39 
+    L6      0.58       0.64       0.68       0.48       0.66       0.41       0.32 
+   L12      0.53       0.51       0.42       0.44       0.61       0.57       0.52 
+   L18      0.57       0.56       0.57       0.55       0.54       0.61       0.34 
+   L23      0.59       0.52       0.61       0.54       0.57       0.64       0.48 
+
+fits of the local exponents (P = 29, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1   (local exponent >= 1 somewhere: not in the untrained regime)
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3   (local exponent >= 1 somewhere: not in the untrained regime)
+    L6          -4.37  0.327       -0.73  0.329
+   L12          18.53  0.093        2.99  0.123
+   L18         -10.52  0.216       -2.13  0.203
+   L23         -60.14  0.009      -14.62  0.004
+saved real/qwen05_prefix/real.npz real.json and pairs.json
+
+===== real/qwen05_random/analysis_center.txt
+
+model=Qwen/Qwen2.5-0.5B [random init]  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024, 2048]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 27, para 27, lang 31, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.66 [0.65,0.67]    0.65 [0.64,0.65]    0.60 [0.60,0.61]    0.62 [0.62,0.63]  -0.02
+    L2    0.48 [0.47,0.49]    0.47 [0.46,0.48]    0.41 [0.41,0.42]    0.42 [0.42,0.43]  -0.09
+    L3    0.40 [0.38,0.41]    0.38 [0.38,0.39]    0.33 [0.33,0.34]    0.34 [0.33,0.34]  -0.12
+    L6    0.29 [0.28,0.30]    0.29 [0.28,0.29]    0.24 [0.24,0.25]    0.25 [0.24,0.25]  -0.15
+   L12    0.23 [0.22,0.24]    0.22 [0.21,0.23]    0.19 [0.18,0.19]    0.19 [0.19,0.20]  -0.18
+   L18    0.20 [0.19,0.21]    0.19 [0.19,0.20]    0.16 [0.16,0.17]    0.17 [0.16,0.17]  -0.19
+   L23    0.19 [0.17,0.20]    0.18 [0.17,0.19]    0.15 [0.15,0.16]    0.16 [0.15,0.16]  -0.20
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-2048
+-----------------------------------------------------------------------------------
+    L1      0.29       0.43       0.55       0.65       0.79       0.83       0.90 
+    L2      0.18       0.28       0.39       0.47       0.55       0.60       0.66 
+    L3      0.14       0.22       0.31       0.38       0.45       0.50       0.55 
+    L6      0.10       0.16       0.23       0.28       0.33       0.37       0.41 
+   L12      0.08       0.13       0.18       0.22       0.25       0.29       0.32 
+   L18      0.07       0.11       0.16       0.19       0.22       0.25       0.28 
+   L23      0.06       0.10       0.14       0.18       0.21       0.23       0.26 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1           0.61  0.842        0.05  0.761
+    L2           2.67  0.972        0.51  0.971
+    L3           4.25  0.985        0.99  0.993
+    L6           7.63  0.991        2.13  0.999
+   L12          11.55  0.996        3.56  0.999
+   L18          14.21  0.998        4.56  0.997
+   L23          15.94  0.999        5.22  0.996
+saved real/qwen05_random/real.npz real.json and pairs.json
+
+===== real/qwen15_final/analysis_center.txt
+
+model=Qwen/Qwen2.5-1.5B  pairs per axis=100  continuations per pair=8  windows=[16, 32, 64, 128, 256, 512, 1024, 2048]  (window width 16, labelled by its center)
+mean prompt length (tokens): detail 27, para 27, lang 31, unrelated 26
+
+alpha per axis and layer, 95% bootstrap interval over prompt pairs; beta in the last column (pooled)
+ layer              detail                para                lang           unrelated   beta
+    L1    0.97 [0.93,1.02]    0.96 [0.95,0.98]    0.87 [0.85,0.88]    0.96 [0.95,0.98]  -0.02
+    L2    0.81 [0.77,0.84]    0.78 [0.76,0.80]    0.84 [0.83,0.85]    0.81 [0.78,0.82]  -0.03
+    L3    0.59 [0.54,0.66]    0.57 [0.56,0.60]    0.65 [0.64,0.65]    0.63 [0.62,0.64]  -0.02
+    L7    0.62 [0.58,0.66]    0.58 [0.57,0.59]    0.63 [0.63,0.64]    0.65 [0.64,0.66]  -0.03
+   L14    0.62 [0.60,0.65]    0.58 [0.56,0.59]    0.61 [0.60,0.61]    0.61 [0.60,0.62]  -0.04
+   L21    0.58 [0.56,0.61]    0.51 [0.50,0.52]    0.54 [0.53,0.55]    0.56 [0.55,0.58]  -0.05
+   L27    0.57 [0.54,0.59]    0.50 [0.49,0.52]    0.53 [0.52,0.54]    0.58 [0.57,0.59]  -0.06
+
+local alpha per octave, pooled over the detail/para/lang axes; '*' = signal < 3x sampling floor
+ layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-2048
+-----------------------------------------------------------------------------------
+    L1      0.67       0.74       0.77       0.66       0.75       1.10       2.19 
+    L2      0.61       0.67       0.83       0.74       1.01       0.91       1.27 
+    L3      0.57       0.63       0.74       0.68       0.74       0.47       0.38 
+    L7      0.60       0.64       0.70       0.67       0.61       0.51       0.46 
+   L14      0.63       0.59       0.66       0.65       0.61       0.44*      0.56 
+   L21      0.61*      0.55*      0.56*      0.56*      0.52       0.46       0.46 
+   L27      0.60       0.52       0.53       0.54       0.48       0.51       0.53 
+
+fits of the local exponents (P = 28, octave midpoints)
+ layer  k (log power)     R2  G (Bessel)     R2
+    L1   (local exponent >= 1 somewhere: not in the untrained regime)
+    L2   (local exponent >= 1 somewhere: not in the untrained regime)
+    L3          -6.31  0.088       -0.86  0.094
+    L7          -5.25  0.339       -0.75  0.389
+   L14          -7.27  0.347       -1.13  0.398
+   L21          -7.05  0.863       -1.30  0.840
+   L27         -13.23  0.425       -2.63  0.334
+saved real/qwen15_final/real.npz real.json and pairs.json
+
+===== scale/p160_final/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step143000  scenes=20  continuations per scene=16  windows=[16, 32, 64, 128, 256, 512, 1024, 1920]  (window width 16, labelled by its center)
+
+alpha / beta per layer  (95% bootstrap interval over scenes)
+  layer   alpha          95% CI    beta
+     L1    1.05    [1.04, 1.07]   -0.00
+     L2    0.92    [0.90, 0.93]   -0.01
+     L3    0.63    [0.57, 0.71]   -0.03
+     L6    0.59    [0.55, 0.62]   -0.05
+     L9    0.64    [0.62, 0.67]   -0.06
+    L11    0.66    [0.64, 0.68]   -0.05
+
+local alpha per octave (between consecutive windows), all axes pooled
+  layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-1920
+------------------------------------------------------------------------------------
+     L1      0.64       0.76       0.97       1.51       1.18       1.07       1.23 
+     L2      0.59       0.58       0.69       1.01       0.95       1.55       1.47 
+     L3      0.52       0.54       0.61       0.76       0.66       0.64       0.64 
+     L6      0.52       0.50       0.61       0.76       0.58       0.55       0.50 
+     L9      0.56       0.50       0.59       0.79       0.66       0.73       0.69 
+    L11      0.58       0.54       0.59       0.81       0.73       0.76       0.53 
+
+alpha per axis
+  layer   detail     para     lang    genre
+     L1     0.89     0.94     1.06     1.12
+     L2     0.87     0.91     0.93     0.90
+     L3     0.72     0.55     0.71     0.62
+     L6     0.65     0.53     0.65     0.57
+     L9     0.73     0.57     0.70     0.62
+    L11     0.75     0.57     0.72     0.64
+
+log-power fit of the local exponents: 1/(1-alpha_loc) = ln t / k + c
+     L1  (local exponent >= 1 somewhere)
+     L2  (local exponent >= 1 somewhere)
+     L3  k = 5.26  R2 = 0.199
+     L6  k = 64.17  R2 = 0.001
+     L9  k = 2.97  R2 = 0.306
+    L11  k = 4.29  R2 = 0.097
+
+fit alpha(l) = 0.98 -0.173 ln l   (residuals: +0.07 +0.05 -0.16 -0.09 +0.04 +0.09)
+saved scale/p160_final/scale.npz and scale.json
+
+===== scale/p160_step0/analysis_center.txt
+
+model=EleutherAI/pythia-160m@step0  scenes=20  continuations per scene=16  windows=[16, 32, 64, 128, 256, 512, 1024, 1920]  (window width 16, labelled by its center)
+
+alpha / beta per layer  (95% bootstrap interval over scenes)
+  layer   alpha          95% CI    beta
+     L1    0.82    [0.81, 0.82]    0.01
+     L2    0.65    [0.65, 0.65]    0.01
+     L3    0.57    [0.57, 0.58]    0.01
+     L6    0.47    [0.47, 0.47]    0.01
+     L9    0.42    [0.42, 0.43]    0.01
+    L11    0.40    [0.40, 0.41]    0.01
+
+local alpha per octave (between consecutive windows), all axes pooled
+  layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-1920
+------------------------------------------------------------------------------------
+     L1      0.47       0.68       0.82       0.90       0.94       0.97       0.99 
+     L2      0.37       0.52       0.63       0.71       0.76       0.80       0.83 
+     L3      0.32       0.46       0.55       0.63       0.67       0.71       0.73 
+     L6      0.26       0.37       0.45       0.52       0.56       0.59       0.61 
+     L9      0.23       0.33       0.41       0.47       0.51       0.54       0.55 
+    L11      0.21       0.31       0.39       0.44       0.48       0.51       0.53 
+
+alpha per axis
+  layer   detail     para     lang    genre
+     L1     0.84     0.84     0.80     0.82
+     L2     0.67     0.67     0.64     0.65
+     L3     0.58     0.59     0.56     0.57
+     L6     0.47     0.48     0.46     0.47
+     L9     0.42     0.44     0.41     0.42
+    L11     0.40     0.42     0.39     0.40
+
+log-power fit of the local exponents: 1/(1-alpha_loc) = ln t / k + c
+     L1  k = 0.07  R2 = 0.710
+     L2  k = 1.07  R2 = 0.985
+     L3  k = 1.96  R2 = 0.996
+     L6  k = 3.59  R2 = 0.995
+     L9  k = 4.65  R2 = 0.993
+    L11  k = 5.10  R2 = 0.996
+
+fit alpha(l) = 0.79 -0.168 ln l   (residuals: +0.03 -0.02 -0.03 -0.01 +0.01 +0.02)
+saved scale/p160_step0/scale.npz and scale.json
+
+===== scale/p410_final/analysis_center.txt
+
+model=EleutherAI/pythia-410m@step143000  scenes=20  continuations per scene=16  windows=[16, 32, 64, 128, 256, 512, 1024, 1920]  (window width 16, labelled by its center)
+
+alpha / beta per layer  (95% bootstrap interval over scenes)
+  layer   alpha          95% CI    beta
+     L1    1.01    [1.00, 1.03]   -0.00
+     L2    0.89    [0.88, 0.90]   -0.01
+     L6    0.70    [0.69, 0.72]   -0.01
+    L12    0.57    [0.56, 0.58]   -0.04
+    L18    0.60    [0.59, 0.61]   -0.06
+    L23    0.60    [0.59, 0.61]   -0.07
+
+local alpha per octave (between consecutive windows), all axes pooled
+  layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-1920
+------------------------------------------------------------------------------------
+     L1      0.59       0.78       0.80       0.89       1.57       1.79       0.42 
+     L2      0.57       0.66       0.61       0.86       0.84       1.05       2.74 
+     L6      0.57       0.65       0.60       0.84       0.59       0.78       1.14 
+    L12      0.47       0.53       0.49       0.77       0.46       0.63       0.66 
+    L18      0.52       0.49       0.45       0.76       0.62       0.73       0.66 
+    L23      0.55       0.54       0.46       0.73       0.65       0.68       0.66 
+
+alpha per axis
+  layer   detail     para     lang    genre
+     L1     1.03     0.89     1.07     1.01
+     L2     0.90     0.80     0.93     0.87
+     L6     0.76     0.66     0.78     0.66
+    L12     0.69     0.50     0.58     0.58
+    L18     0.72     0.51     0.61     0.61
+    L23     0.69     0.50     0.62     0.61
+
+log-power fit of the local exponents: 1/(1-alpha_loc) = ln t / k + c
+     L1  (local exponent >= 1 somewhere)
+     L2  (local exponent >= 1 somewhere)
+     L6  (local exponent >= 1 somewhere)
+    L12  k = 4.99  R2 = 0.126
+    L18  k = 3.02  R2 = 0.368
+    L23  k = 4.21  R2 = 0.355
+
+fit alpha(l) = 0.99 -0.140 ln l   (residuals: +0.03 +0.00 -0.03 -0.07 +0.02 +0.06)
+saved scale/p410_final/scale.npz and scale.json
+
+===== scale/p410_step0/analysis_center.txt
+
+model=EleutherAI/pythia-410m@step0  scenes=20  continuations per scene=16  windows=[16, 32, 64, 128, 256, 512, 1024, 1920]  (window width 16, labelled by its center)
+
+alpha / beta per layer  (95% bootstrap interval over scenes)
+  layer   alpha          95% CI    beta
+     L1    0.82    [0.81, 0.82]    0.01
+     L2    0.65    [0.65, 0.66]    0.01
+     L6    0.47    [0.47, 0.48]    0.01
+    L12    0.40    [0.39, 0.40]    0.01
+    L18    0.36    [0.36, 0.37]    0.01
+    L23    0.35    [0.34, 0.35]    0.01
+
+local alpha per octave (between consecutive windows), all axes pooled
+  layer      16-32      32-64     64-128    128-256    256-512   512-1024  1024-1920
+------------------------------------------------------------------------------------
+     L1      0.47       0.68       0.81       0.90       0.95       0.97       0.99 
+     L2      0.37       0.52       0.63       0.71       0.77       0.80       0.82 
+     L6      0.26       0.37       0.45       0.52       0.56       0.59       0.61 
+    L12      0.21       0.31       0.38       0.44       0.48       0.51       0.53 
+    L18      0.19       0.28       0.35       0.40       0.43       0.47       0.49 
+    L23      0.18       0.26       0.33       0.38       0.42       0.45       0.47 
+
+alpha per axis
+  layer   detail     para     lang    genre
+     L1     0.84     0.84     0.80     0.82
+     L2     0.67     0.67     0.64     0.65
+     L6     0.47     0.49     0.46     0.47
+    L12     0.40     0.42     0.39     0.39
+    L18     0.37     0.38     0.36     0.36
+    L23     0.35     0.36     0.34     0.34
+
+log-power fit of the local exponents: 1/(1-alpha_loc) = ln t / k + c
+     L1  k = 0.07  R2 = 0.720
+     L2  k = 1.08  R2 = 0.988
+     L6  k = 3.54  R2 = 0.996
+    L12  k = 5.26  R2 = 0.995
+    L18  k = 6.21  R2 = 0.997
+    L23  k = 6.76  R2 = 0.996
+
+fit alpha(l) = 0.78 -0.147 ln l   (residuals: +0.04 -0.02 -0.04 -0.01 +0.01 +0.03)
+saved scale/p410_step0/scale.npz and scale.json
+
+===== mech/analysis_center.txt
+
+mech/p160_step0  (window width 16, centre labels; four axes pooled)
+ layer  measured   paths  direct   relay   share  uniform  per-head
+    L1      0.71    0.70    0.70    0.47    0.02     0.10      0.06
+    L2      0.56    0.53    0.69    0.19    0.74     0.09      0.05
+    L3      0.49    0.46    0.69    0.13    0.87     0.08      0.05
+    L6      0.40    0.38    0.68    0.06    0.95     0.07      0.04
+    L9      0.36    0.34    0.68    0.02    0.97     0.06      0.04
+   L11      0.35    0.32    0.68    0.01    0.97     0.06      0.04
+
+mech/p160_step512  (window width 16, centre labels; four axes pooled)
+ layer  measured   paths  direct   relay   share  uniform  per-head
+    L1      0.70    0.69    0.69    0.47    0.02     0.10      0.06
+    L2      0.74    0.73    0.82    0.40    0.55     0.17      0.06
+    L3      0.79    0.79    0.92    0.50    0.72     0.23      0.07
+    L6      0.77    0.73    0.96    0.52    0.87     0.28      0.09
+    L9      0.66    0.60    0.83    0.38    0.88     0.25      0.10
+   L11      0.67    0.61    0.83    0.38    0.88     0.26      0.10
+
+mech/p160_final  (window width 16, centre labels; four axes pooled)
+ layer  measured   paths  direct   relay   share  uniform  per-head
+    L1      0.98    0.98    0.97    0.86    0.03     0.29     -0.14
+    L2      0.80    0.82    0.86    0.62    0.41     0.22     -0.12
+    L3      0.57    0.61    0.56    0.34    0.50     0.14     -0.10
+    L6      0.54    0.60    0.39    0.20    0.57     0.11     -0.11
+    L9      0.61    0.62    0.40    0.22    0.54     0.20     -0.06
+   L11      0.63    0.61    0.41    0.25    0.53     0.24     -0.02
+
